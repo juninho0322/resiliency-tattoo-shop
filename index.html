@@ -10,58 +10,107 @@
     <link rel="icon" href="images/fav.png">
 
     <!-- CSS NATIVE -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu/nav.css">
+    <link rel="stylesheet" href="css/home/home.css">
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+    <link rel="stylesheet" href="css/photoswipe/photoswipe.css">
 
 
 </head>
 
 <body>
-    <header>
 
-        <div class="container-header">
-            <div class="nav-container">
-                <nav class="nav-menu">
-                    <div>
-                        <a href="#" class="nav-logo">
-                            <img src="images/logo-menu.png" class="logo-menu" alt="Your Logo">
-                        </a>
-                    </div>
-
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#services">Team</a></li>
-                        <li><a href="#contact">FAQ</a></li>
-                    </ul>
-                    <div>
-                        <a href="#" class="button">Book Now</a>
-                    </div>
-                </nav>
-            </div>
-            <div class="main-header">
-                <!-- <div class="main-header-sides">
-                    <img src="images/Resiliency_versões do logotipo_fundo escuro - vertical com assinatura.png" alt=""
-                        class="img-test">
-                </div> -->
-                <div class="main-header-sides">
-
-                </div>
+    <header class="container-header">
+        <nav class="w-size nav-menu">
+            <div>
+                <a href="#" class="nav-logo">
+                    <img src="images/logo-menu.png" class="logo-menu" alt="Your Logo">
+                </a>
             </div>
 
-        </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Team</a></li>
+                <li><a href="#contact">FAQ</a></li>
+            </ul>
 
+            <div>
+                <a href="#" class="button-book" id="button-book">Book Now</a>
+            </div>
+        </nav>
     </header>
 
 
+    <main>
 
-    <h1 class="test-h1">test Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repellendus officiis
-        temporibus! Voluptates doloremque architecto corrupti excepturi velit cupiditate eaque iste molestiae alias id.
-        Nihil fugiat voluptatibus esse voluptatem incidunt!</h1>
+        <section class="w-size home" id="home">
+
+            <div class="background-blur">
+                <div class="background-overlay"></div>
+            </div>
+
+            <div class="w-size home-img">
+
+                <img src="images/resiliency- assinatura.png" alt="">
+                <div class="w-size home-text">
+                    <h2>
+                        <p> Here art meets skin, transform your ideas into
+                            stunning custom tattoos </p>
+                    </h2>
+                    <div class="w-size home-buttons">
+                        <a href="#" class="button-book" id="button-book">Book Now</a>
+                        <a href="#" class="button-team" id="button-team">Team</a>
+                    </div>
+                </div>
+            </div>
 
 
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+        <section class="about" id="about">
+
+            <h1 class="test-h1">test Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repellendus
+                officiis
+                temporibus! Voluptates doloremque architecto corrupti excepturi velit cupiditate eaque iste molestiae
+                alias
+                id.
+                Nihil fugiat voluptatibus esse voluptatem incidunt!</h1>
+
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+
+    </footer>
+
+
+
+
+    <script src="scripts/photoswipe/photoswipe-lightbox.umd.min.js"></script>
+    <script src="scripts/photoswipe/photoswipe.umd.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+
 </body>
 
 </html>
