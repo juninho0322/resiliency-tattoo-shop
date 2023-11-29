@@ -8,6 +8,16 @@
     z-index: 999;
 }
 
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 .logo-menu {
 
     width: 7em;
@@ -70,7 +80,7 @@ li>a.active-nav::after {
     padding: 1em 1.2em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    visibility: visible;
     font-size: 1.5rem !important;
     font-family: RodfatTwo;
     width: 8.5em;

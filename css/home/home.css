@@ -62,16 +62,59 @@
 
 }
 
-.home-img p {
+.home-img h1 {
     font-family: SkateSans;
     color: var(--primary-b);
     text-align: center;
     letter-spacing: 0.2em;
+    font-size: 1.5rem;
+    padding: 2em 4em 0 4em;
+
 
 }
 
-.home-text {
-    padding-top: 2em;
+
+.text-line {
+    border: 1px solid;
+    border-color: var(--secondary-a);
+    display: flex;
+    width: 80%;
+    margin: 0.3em auto;
+
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}
+
+.text-line {
+    animation: fade 1000ms infinite;
+    -webkit-animation: fade 1000ms infinite;
 }
 
 
