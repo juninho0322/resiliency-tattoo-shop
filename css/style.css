@@ -31,6 +31,18 @@
         font-size: 16px;
     }
 
+
+    @media (orientation: landscape) {
+        body {
+            /* Your styles for landscape orientation go here */
+            width: 100vw;
+            /* Set the width to 100% of the viewport width */
+            height: 100vh;
+            /* Set the height to 100% of the viewport height if needed */
+            /* Additional styles for landscape orientation */
+        }
+    }
+
     .container-header {
         width: 100vw;
         position: absolute;
