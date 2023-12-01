@@ -1,0 +1,67 @@
+@media (max-width: 1100px) {
+    .button-book {
+        display: none;
+    }
+
+    .button-book2 {
+        display: flex;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .nav-logo {
+        justify-content: flex-start;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu {
+        justify-content: space-between;
+        padding: 0 3em
+    }
+
+    .logo-menu {
+        width: 5em;
+
+    }
+
+
+    .burguer {
+        display: flex;
+        flex-direction: column;
+        width: 1em;
+        font-size: 5em;
+        font-family: SkateSans;
+        cursor: pointer;
+
+    }
+
+
+
+    .bar {
+        width: 80%;
+        height: 3px;
+        background: var(--primary-b);
+        margin: 0 auto 18px;
+        transition: transform 0.4s ease;
+    }
+
+    /*.menu:hover .bar {*/
+    /*  transform: rotate(-10deg);*/
+    /*}*/
+
+
+
+}
+
+@media (max-width: 500px) {
+    .nav-menu {
+
+        padding: 0 0.5em;
+    }
+
+}

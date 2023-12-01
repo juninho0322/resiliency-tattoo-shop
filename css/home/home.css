@@ -49,20 +49,20 @@
 }
 
 
-.home-img {
+.wrapper-home-img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-self: center;
     justify-content: center;
     max-width: 100%;
-    max-height: calc(100% - 180px);
-    padding-top: 10em;
+    /* max-height: calc(100% - 180px); */
+    padding-top: 15em;
     position: relative;
 
 }
 
-.home-img h1 {
+.wrapper-home-img h1 {
     font-family: SkateSans;
     color: var(--primary-b);
     text-align: center;
@@ -71,6 +71,10 @@
     padding: 2em 4em 0 4em;
 
 
+}
+
+.home-logo {
+    max-width: 90%;
 }
 
 

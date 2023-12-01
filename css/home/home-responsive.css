@@ -1,0 +1,59 @@
+@media (max-width: 1100px) and (orientation: portrait) {
+    .home-logo {
+        max-width: 90%;
+        display: flex;
+        align-items: flex-start;
+        /* padding-bottom: 10em; */
+
+    }
+}
+
+@media (max-width: 1100px) and (orientation: landscape) {
+    .wrapper-home-img {
+        padding-top: 10em;
+
+    }
+
+
+}
+
+
+@media (max-width: 900px) and (orientation: portrait) {
+    .wrapper-home-img {
+        padding-top: 20em;
+        display: flex;
+        padding-bottom: 10em;
+    }
+}
+
+
+
+@media (max-width: 700px) and (orientation: portrait) {
+    .home-buttons {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        /* padding-bottom: 20em; */
+    }
+}
+
+
+@media (max-width: 400px) and (orientation: portrait) {
+    .wrapper-home-img {
+        padding-bottom: 15em;
+    }
+
+    .wrapper-home-img h1 {
+        font-family: SkateSans;
+        color: var(--primary-b);
+        text-align: center;
+        letter-spacing: 0.2em;
+        font-size: 1rem;
+        padding: 2em 4em 0 4em;
+
+
+    }
+
+
+}
