@@ -53,6 +53,7 @@
     @media (max-width: 900px) and (orientation: landscape) {
         .nav-menu {
             height: auto;
+            width: 100vw;
 
         }
 
