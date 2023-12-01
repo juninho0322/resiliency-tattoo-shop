@@ -50,9 +50,14 @@
         transition: transform 0.4s ease;
     }
 
-    /*.menu:hover .bar {*/
-    /*  transform: rotate(-10deg);*/
-    /*}*/
+    @media (max-width: 900px) and (orientation: landscape) {
+        .nav-menu {
+            height: auto;
+
+        }
+
+
+    }
 
 
 
