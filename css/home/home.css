@@ -5,25 +5,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(51, 51, 51, 0.3);
-    /* Red color with 50% transparency */
     z-index: -1;
-    filter: blur(3px);
-}
-
-.background-blur {
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    filter: blur(1px);
-    transition: opacity 1s ease-in-out;
     animation: slideshow 15s infinite;
-}
 
+}
 
 
 @keyframes slideshow {
@@ -31,18 +16,22 @@
     0%,
     100% {
         background: url('../../images/tattoo-first-page.jpg') center / cover no-repeat;
+
     }
 
     25% {
         background: url('../../images/15541091_1623918120958380_2719381329338003218_o.jpg') center / cover no-repeat;
+
     }
 
     50% {
         background: url('../../images/man-doing-tattoo-tattoo-salon.jpg') center / cover no-repeat;
+
     }
 
     75% {
         background: url('../../images/process-creating-new-tattoo-young-woman-by-expirienced-tattoo-artist-studio.jpg') center / cover no-repeat;
+
     }
 
 
@@ -53,10 +42,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-self: center;
+    /* align-self: center; */
     justify-content: center;
     max-width: 100%;
-    /* max-height: calc(100% - 180px); */
+    max-height: calc(100% - 180px);
     padding-top: 15em;
     position: relative;
 
@@ -87,7 +76,7 @@
 
 }
 
-
+/*BLINKING LINE TEXT*/
 @keyframes fade {
     from {
         opacity: 1.0;

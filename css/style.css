@@ -52,6 +52,7 @@
     .container {
         width: 100%;
         max-width: 1280px;
+        height: 100lvw;
 
 
     }
@@ -59,6 +60,7 @@
 
     .home {
         display: flex;
+        flex-wrap: wrap;
         height: 100vh;
         /* padding-top: 180px; */
         margin: 0 auto;
