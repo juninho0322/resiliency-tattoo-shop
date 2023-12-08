@@ -1,82 +1,56 @@
-@media (min-width: 800px)and (max-width: 1100px) and (orientation: portrait) {
-    .home-logo {
-        max-width: 90%;
-        display: flex;
-        align-items: flex-start;
-        padding-top: 2em;
-    }
+/* For Desktop View */
+@media screen and (min-width: 1024px) {}
 
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
     .home-buttons {
-        padding-top: 5em;
-    }
-
-    .home-text {
-        padding-top: 2em;
-    }
-}
-
-
-
-@media (min-width: 700px) and (max-width: 900px)and (orientation: portrait) {
-    .home-buttons {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        /* padding-bottom: 20em; */
-    }
-
-    .wrapper-home-img {
-
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-}
-
-
-@media (min-width: 100px) and (max-width: 700px)and (orientation: portrait) {
-
-    .wrapper-home-img h1 {
-        font-family: SkateSans;
-        color: var(--primary-b);
-        text-align: center;
-        letter-spacing: 0.2em;
-        font-size: 1.2rem;
-
-    }
-
-    .home-buttons {
-
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 2em;
 
     }
 
-    .home-text {
-        padding-top: 2em;
-    }
 
+    .background-overlay,
+    .home {
+        height: 120svh;
+    }
 }
 
-@media (min-width: 800px) and (max-width: 1100px) and (orientation: landscape) {
-    .wrapper-home-img {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        width: 100%;
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+
+    .background-overlay,
+    .home {
+        height: 120svh;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .background-overlay,
+    .home {
+        height: 1000svh;
     }
 
     .home-buttons {
-        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+
     }
-
-    .background-overlay {
-        min-height: 100%;
-        /* overflow: hidden; */
-    }
-
-
 }
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+;
