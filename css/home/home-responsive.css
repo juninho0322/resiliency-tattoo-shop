@@ -77,6 +77,16 @@
     .home {
         height: 140svh;
     }
+      .about {
+        padding-top: 25em;
+        height: 100svh;
+    }
+
+    .services {
+        height: 100svh;
+        padding-top: 25em;
+    }
+
 }
 
 /* For Mobile Landscape View */
