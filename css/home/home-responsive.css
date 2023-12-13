@@ -2,7 +2,52 @@
 @media screen and (min-width: 1024px) {}
 
 /* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    .background-overlay,
+    .home .wrapper-home-img {
+        height: 200svh;
+
+    }
+
+    .about {
+        padding-top: 25em;
+        position: relative;
+        height: 100svh;
+
+    }
+
+    .services {
+        padding-top: 25em;
+        position: relative;
+        height: 100svh;
+
+    }
+}
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .background-overlay,
+    .home .wrapper-home-img {
+        height: 100svh;
+
+    }
+
+    .about {
+        /* padding-top: 25em; */
+        position: relative;
+        height: 100svh;
+
+    }
+
+    .services {
+        /* padding-top: 25em; */
+        position: relative;
+        height: 100svh;
+
+    }
+}
 
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
@@ -16,7 +61,7 @@
 
     .background-overlay,
     .home {
-        height: 140svh;
+        height: 120svh;
     }
 }
 
@@ -24,9 +69,22 @@
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
 
     .background-overlay,
-    .home {
-        height: 140svh;
+    .home .wrapper-home-img {
+        height: 100svh;
     }
+
+    .about {
+        margin: 0 auto;
+        position: relative;
+
+    }
+
+    .services {
+        padding-top: 100px;
+        position: relative;
+
+    }
+
 }
 
 /* For Mobile Phones Portrait or Landscape View */

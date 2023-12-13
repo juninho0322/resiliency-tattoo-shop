@@ -64,6 +64,7 @@
         height: 100svh;
         /* padding-top: 180px; */
         margin: 0 auto;
+
     }
 
 
@@ -76,9 +77,11 @@
     .about {
         height: 100svh;
 
+
     }
 
     .services {
         height: 100svh;
+
 
     }
