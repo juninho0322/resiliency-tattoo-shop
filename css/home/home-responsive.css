@@ -75,7 +75,7 @@
 
     .background-overlay,
     .home {
-        height: 110svh;
+        height: 120svh;
     }
 }
 
@@ -84,7 +84,7 @@
 
     .background-overlay,
     .home .wrapper-home-img {
-        height: 200svh;
+        height: 220svh;
     }
 
     .about {
