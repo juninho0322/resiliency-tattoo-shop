@@ -6,7 +6,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    animation: slideshow 15s infinite;
+    animation: slideshow 10s infinite;
     display: flex;
     flex-wrap: wrap;
     height: 100svh;
