@@ -2,13 +2,18 @@
 @media screen and (min-width: 1024px) {
 
     .background-overlay,
-    .home .wrapper-home-img .container {
+    .home .wrapper-home-img {
         height: 100svh;
 
     }
+
+    .home-logo {
+        max-width: 90%;
+    }
+
 }
 
-/* For Tablet View */
+/* For Tablet View  LANDSCAPE */
 @media screen and (min-device-width: 768px) and (max-device-width: 1084px) and (orientation: landscape) {
 
     .background-overlay,
@@ -16,6 +21,8 @@
         height: 100svh;
 
     }
+
+
 
     .about {
         /* padding-top: 25em; */
@@ -32,11 +39,11 @@
     }
 }
 
-/* For Tablet View */
+/* For Tablet View   PORTRAIT */
 @media screen and (min-device-width: 810px) and (max-device-width: 1084px) and (orientation: portrait) {
 
     .background-overlay,
-    .home .wrapper-home-img .container {
+    .home .wrapper-home-img {
         height: 100svh;
 
     }
@@ -45,9 +52,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 5em;
-        gap: 6em;
+        padding-top: 1em;
+        gap: 3em;
     }
+
+
 
     .about {
         /* margin-top: 0; */
@@ -63,7 +72,7 @@
     }
 }
 
-/* For Mobile Portrait View */
+/* For Mobile Portrait View PORTRAIT */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
     .home-buttons {
         display: flex;
@@ -75,13 +84,14 @@
 
     .background-overlay,
     .home {
-        height: 140svh;
+        height: 120svh;
     }
-    
+
+
 
 }
 
-/* For Mobile Landscape View */
+/* For Mobile Landscape View LANDSCAPE */
 @media screen and (max-device-width: 844px) and (orientation: landscape) {
 
     .background-overlay,
@@ -89,8 +99,10 @@
         height: 220svh;
     }
 
+
+
     .about {
-        padding-top: 25em;
+        padding-top: 30em;
         height: 100svh;
     }
 
