@@ -18,14 +18,14 @@
 
     .background-overlay,
     .home .wrapper-home-img {
-        height: 100svh;
+        height: 120svh;
 
     }
 
 
 
     .about {
-        /* padding-top: 25em; */
+        padding-top: 10em;
         /* position: relative; */
         height: 100svh;
 
@@ -95,7 +95,7 @@
 
     .background-overlay,
     .home {
-        height: 120svh;
+        height: 140svh;
     }
 
 
