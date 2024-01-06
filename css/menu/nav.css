@@ -3,9 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 180px;
+    height: 140px;
     margin: 0 auto;
     z-index: 9999;
+    /* position: fixed; */
 }
 
 .nav-list {
@@ -19,7 +20,7 @@
 
 
 .logo-menu {
-    width: 7em;
+    width: 5em;
 }
 
 ul,

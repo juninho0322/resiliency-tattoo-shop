@@ -85,7 +85,7 @@
 
 
 
-.burguer-menu {
+.burger-menu {
     background-color: rgba(0, 0, 0, 0.98);
     height: calc(100vh - 160px);
     width: 100%;
@@ -100,14 +100,14 @@
 
 
 
-#burger:hover~.burguer-menu,
+/* #burger:hover~.burguer-menu,
 .burguer-menu:hover {
     visibility: visible;
-}
+} */
 
 
 
-.burguer-list {
+.burger-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -119,7 +119,7 @@
 
 }
 
-.burguer-list>.home-logo {
+.burger-list>.home-logo {
     margin-top: 5em;
     width: 50%;
 

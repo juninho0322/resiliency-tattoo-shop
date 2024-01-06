@@ -17,6 +17,26 @@ document.querySelector("#button-book").addEventListener("click", function () {
 });
 
 
+// function click and touch menu-burger activate
+var burgerButton = document.querySelector("#burger");
+var burgerMenu = document.getElementById("burger-menu");
 
+function toggleBurgerMenu() {
+    // Toggle visibility
+    if (burgerMenu.style.visibility === "visible") {
+        burgerMenu.style.visibility = "hidden";
+        // Enable scrolling
+        document.body.style.overflow = "auto";
+    } else {
+        burgerMenu.style.visibility = "visible";
+        // Disable scrolling
+        document.body.style.overflow = "hidden";
+    }
 
+}
 
+// Click event
+burgerButton.addEventListener("click", toggleBurgerMenu);
+
+// Touch event
+burgerButton.addEventListener("touchstart", toggleBurgerMenu);
