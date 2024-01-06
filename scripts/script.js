@@ -33,6 +33,9 @@ function toggleBurgerMenu() {
         document.body.style.overflow = "hidden";
     }
 
+    // Set transition to ease-in-out
+    burgerMenu.style.transition = "visibility 0.3s ease-in-out";
+
 }
 
 // Click event

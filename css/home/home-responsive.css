@@ -1,1 +1,9 @@
+@media (max-width: 900px) {
+    .my-h1 {
+        font-size: 1.2em;
+    }
+}
+
+
+
 @media screen and (orientation: landscape) and (max-height: 768px) {}

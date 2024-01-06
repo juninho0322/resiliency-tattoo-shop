@@ -113,11 +113,14 @@
 
 .home-buttons {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    width: 60%;
     padding-top: 2.5em;
     justify-content: center;
     gap: 3rem;
-    flex-wrap: wrap;
+    margin: 0 auto;
+
 }
 
 .button-team {
