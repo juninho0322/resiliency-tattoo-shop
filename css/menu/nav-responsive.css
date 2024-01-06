@@ -21,8 +21,8 @@
 
     .nav-menu {
         justify-content: space-between;
-        padding: 0 3em;
-        height: 170px;
+        padding: 0 0.1em 0 0;
+        /* height: 170px; */
     }
 
     .nav-menu:last-child {
@@ -30,7 +30,7 @@
     }
 
     .logo-menu {
-        width: 5em;
+        width: 4em;
 
     }
 
@@ -39,16 +39,12 @@
         display: flex;
         flex-direction: column;
         width: 1em;
-        font-size: 5em;
+        font-size: 4em;
         font-family: SkateSans;
         cursor: pointer;
-        padding-bottom: 1em;
-        padding-top: 0.6em;
-
-
+        padding: 0.2em 0.2em 0 0;
 
     }
-
 
 
     .bar {
@@ -57,44 +53,23 @@
         background: var(--primary-b);
         margin: 0 auto 18px;
         /* transition: transform 0.4s ease; */
-
-    }
-
-
-    @media (max-width: 900px) and (orientation: landscape) {
-        .nav-menu {
-            height: 170px;
-            width: 100vw;
-
-        }
-
-
-    }
-
-
-
-}
-
-@media (max-width: 500px) {
-    .nav-menu {
-        height: 170px;
-        padding: 0 0.5em;
     }
 
 }
+
+
 
 
 
 .burger-menu {
-    background-color: rgba(0, 0, 0, 0.98);
-    height: calc(100vh - 160px);
+    background-color: black;
+    height: calc(100vh - 140px);
     width: 100%;
     visibility: hidden;
     position: absolute;
-    top: 160px;
+    top: 120px;
     left: 0;
     margin: 0 auto;
-
 
 }
 
@@ -116,11 +91,9 @@
     gap: 2em;
     margin: 0 auto;
     padding-top: 7em;
-
 }
 
 .burger-list>.home-logo {
     margin-top: 5em;
     width: 50%;
-
 }
