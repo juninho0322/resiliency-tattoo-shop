@@ -77,13 +77,13 @@ li>a.active-nav::after {
     background-color: var(--secondary-a);
     border: none;
     color: var(--primary-b);
-    padding: 1em 1.2em;
+    padding: 1.5em;
     text-align: center;
     text-decoration: none;
     visibility: visible;
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     font-family: RodfatTwo;
-    width: 8.5em;
+    width: 8em;
     height: 3em;
     display: flex;
     justify-content: center;
@@ -91,13 +91,13 @@ li>a.active-nav::after {
 
 }
 
-
-
 .button-book:hover {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     perspective: 1000px;
 }
+
+
 
 @keyframes shake {
 

@@ -63,7 +63,7 @@
 
 .burger-menu {
     background-color: black;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 120px);
     width: 100%;
     visibility: hidden;
     position: absolute;
@@ -94,6 +94,6 @@
 }
 
 .burger-list>.home-logo {
-    margin-top: 5em;
+    margin-top: 3em;
     width: 50%;
 }
