@@ -22,7 +22,11 @@
     .nav-menu {
         justify-content: space-between;
         padding: 0 3em;
-        height: 100%;
+        height: 170px;
+    }
+
+    .nav-menu:last-child {
+        padding-left: 1em;
     }
 
     .logo-menu {
@@ -31,13 +35,17 @@
     }
 
 
-    .burguer {
+    .burger {
         display: flex;
         flex-direction: column;
         width: 1em;
         font-size: 5em;
         font-family: SkateSans;
         cursor: pointer;
+        padding-bottom: 1em;
+        padding-top: 0.6em;
+
+
 
     }
 
@@ -48,12 +56,14 @@
         height: 3px;
         background: var(--primary-b);
         margin: 0 auto 18px;
-        transition: transform 0.4s ease;
+        /* transition: transform 0.4s ease; */
+
     }
+
 
     @media (max-width: 900px) and (orientation: landscape) {
         .nav-menu {
-            height: auto;
+            height: 170px;
             width: 100vw;
 
         }
@@ -67,8 +77,50 @@
 
 @media (max-width: 500px) {
     .nav-menu {
-        height: 130px;
+        height: 170px;
         padding: 0 0.5em;
     }
+
+}
+
+
+
+.burguer-menu {
+    background-color: rgba(0, 0, 0, 0.98);
+    height: calc(100vh - 160px);
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    margin: 0 auto;
+
+
+}
+
+
+
+#burger:hover~.burguer-menu,
+.burguer-menu:hover {
+    visibility: visible;
+}
+
+
+
+.burguer-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 0 auto;
+    padding-top: 7em;
+
+}
+
+.burguer-list>.home-logo {
+    margin-top: 5em;
+    width: 50%;
 
 }

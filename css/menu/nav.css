@@ -5,7 +5,7 @@
     align-items: center;
     height: 180px;
     margin: 0 auto;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .nav-list {

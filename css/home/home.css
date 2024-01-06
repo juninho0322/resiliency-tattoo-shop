@@ -1,18 +1,14 @@
-.background-overlay {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.background-slideshow {
+    display: flex;
+    background-color: var(--primary-a);
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
     z-index: -1;
     animation: slideshow 10s infinite;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100svh;
+
 
 }
-
 
 @keyframes slideshow {
 
@@ -40,36 +36,14 @@
 
 }
 
-
-.wrapper-home-img {
+.home-content {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* align-self: center; */
-    justify-content: center;
-    max-width: 100%;
-    max-height: calc(100% - 180px);
-    padding-top: 15em;
-    position: relative;
-
-}
-
-.wrapper-home-img h1 {
-    font-family: SkateSans;
-    color: var(--primary-b);
-    text-align: center;
-    letter-spacing: 0.2em;
-    font-size: 1.5rem;
-    padding: 2em 4em 0 4em;
-
-
-}
-
-.container-home-logo {
-
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
+    flex-direction: column;
+    padding-top: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 
 }
@@ -78,15 +52,26 @@
     object-fit: contain;
     margin: 0 auto;
     max-width: 90%;
+    padding-top: 2em;
 }
 
+.my-h1 {
+    font-family: SkateSans;
+    color: var(--primary-b);
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 1.5rem;
+    padding: 2em 2em 0 2em;
+}
 
 .text-line {
     border: 1px solid;
     border-color: var(--secondary-a);
     display: flex;
     width: 80%;
-    margin: 0.3em auto;
+    margin: 0.1em auto;
+    animation: fade 1000ms infinite;
+    -webkit-animation: fade 1000ms infinite;
 
 }
 
@@ -119,18 +104,13 @@
     }
 }
 
-.text-line {
-    animation: fade 1000ms infinite;
-    -webkit-animation: fade 1000ms infinite;
-}
-
-
 .home-buttons {
     display: flex;
     flex-direction: row;
-    padding-top: 2em;
+    padding-top: 1.5em;
     justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .button-team {

@@ -50,9 +50,12 @@
     }
 
     .container {
+        display: flex;
         width: 100%;
         max-width: 1280px;
         height: 100svh;
+        margin: 0 auto;
+
 
 
     }
@@ -62,8 +65,10 @@
         display: flex;
         flex-wrap: wrap;
         height: 100svh;
+        width: 100%;
         /* padding-top: 180px; */
         margin: 0 auto;
+
 
     }
 
@@ -75,7 +80,12 @@
     }
 
     .about {
+        display: flex;
+        flex-wrap: wrap;
         height: 100svh;
+        /* position: relative; */
+        z-index: 2;
+
 
 
     }
