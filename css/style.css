@@ -31,6 +31,10 @@
         font-size: 16px;
     }
 
+    body.noscroll {
+        overflow: hidden;
+    }
+
 
 
 
@@ -43,7 +47,8 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        background-color: black;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
 
         /* color: white; */
 
@@ -53,9 +58,7 @@
         display: flex;
         width: 100%;
         max-width: 1280px;
-        height: 100svh;
         margin: 0 auto;
-
 
 
     }
@@ -64,12 +67,16 @@
     .home {
         display: flex;
         flex-wrap: wrap;
-        height: 100svh;
+        min-height: 100svh;
         width: 100%;
         /* padding-top: 180px; */
         margin: 0 auto;
     }
 
+    .app-section {
+        padding-top: 140px;
+        min-height: 100vh;
+    }
 
 
 
@@ -80,9 +87,9 @@
     .about {
         display: flex;
         flex-wrap: wrap;
-        height: 100svh;
-        position: relative;
-        z-index: 2;
+        min-height: 100svh;
+
+
 
 
 

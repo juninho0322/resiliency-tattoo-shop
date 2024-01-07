@@ -19,11 +19,7 @@
         display: none;
     }
 
-    .nav-menu {
-        justify-content: space-between;
-        padding: 0 0.1em 0 0;
-        /* height: 170px; */
-    }
+
 
     .nav-menu:last-child {
         padding-left: 1em;
@@ -70,10 +66,15 @@
     top: 120px;
     left: 0;
     margin: 0 auto;
-    /* transition: all 0.5s linear; */
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
 
 }
 
+.burger-menu.active {
+    visibility: visible;
+
+}
 
 
 /* #burger:hover~.burguer-menu,

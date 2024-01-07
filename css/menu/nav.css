@@ -1,11 +1,15 @@
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 120px;
     margin: 0 auto;
-    z-index: 9999;
+    z-index: 999;
+    width: 100%;
+    padding: 0 2em;
+
+
     /* position: fixed; */
 }
 

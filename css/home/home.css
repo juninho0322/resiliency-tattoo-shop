@@ -1,20 +1,26 @@
 .background-slideshow {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
-    z-index: -1;
     animation: slideshow 10s infinite;
+
 
 
 }
 
 .background-overlay {
-    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
+
+
 }
 
 @keyframes slideshow {
@@ -47,19 +53,15 @@
     display: flex;
     flex-direction: column;
     padding-top: 190px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    position: relative;
 
 }
 
 .home-logo {
     object-fit: contain;
     margin: 0 auto;
-    max-width: 80%;
-    padding-top: 2em;
+    max-width: 55%;
+
 }
 
 .my-h1 {
@@ -138,4 +140,11 @@
     width: 8em;
     height: 3em;
 
+}
+
+.button-book2 {
+    border: 0.1em solid;
+    border-color: var(--secondary-a);
+    width: 8em;
+    height: 3em;
 }

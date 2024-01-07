@@ -21,25 +21,25 @@ document.querySelector("#button-book").addEventListener("click", function () {
 var burgerButton = document.querySelector("#burger");
 var burgerMenu = document.getElementById("burger-menu");
 
+
 function toggleBurgerMenu() {
     // Toggle visibility
-    if (burgerMenu.style.visibility === "visible") {
-        burgerMenu.style.visibility = "hidden";
-        // Enable scrolling
-        document.body.style.overflow = "auto";
-    } else {
-        burgerMenu.style.visibility = "visible";
-        // Disable scrolling
-        document.body.style.overflow = "hidden";
-    }
-
-    // Set transition to ease-in-out
-    burgerMenu.style.transition = "visibility 0.3s ease-in-out";
+    burgerMenu.classList.toggle("active");
+    document.querySelector("body").classList.toggle("noscroll");
 
 }
 
 // Click event
 burgerButton.addEventListener("click", toggleBurgerMenu);
 
-// Touch event
-burgerButton.addEventListener("touchstart", toggleBurgerMenu);
+document.querySelectorAll(".js-close").forEach(function (itemMenu) {
+    itemMenu.addEventListener("click", toggleBurgerMenu);
+
+});
+
+console.log(document.querySelectorAll(".js-close"));
+
+
+
+
+

@@ -24,12 +24,12 @@
 <body>
 
     <header class="container-header">
-        <nav class="container nav-menu">
-            <div>
-                <a href="#" class="nav-logo">
-                    <img src="images/logo-menu.png" class="logo-menu" alt="Your Logo">
-                </a>
-            </div>
+        <nav class="nav-menu container">
+
+            <a href="#" class="nav-logo">
+                <img src="images/logo-menu.png" class="logo-menu" alt="Your Logo">
+            </a>
+
 
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
@@ -51,11 +51,11 @@
 
             <div class="burger-menu" id="burger-menu">
                 <ul class="burger-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">FAQ</a></li>
+                    <li><a class="js-close" href="#home">Home</a></li>
+                    <li><a class="js-close" href="#about">About</a></li>
+                    <li><a class="js-close" href="#services">Services</a></li>
+                    <li><a class="js-close" href="#team">Team</a></li>
+                    <li><a class="js-close" href="#contact">FAQ</a></li>
                     <img src="images/resiliency- assinatura.png" alt="" class="home-logo">
                 </ul>
             </div>
@@ -66,32 +66,32 @@
 
     <main>
 
-        <section class="home">
-
-            <div class="background-slideshow">
-                <div class="background-overlay"></div>
-                <div class="container home-content">
-                    <img src="images/resiliency- assinatura.png" alt="" class="home-logo">
-                    <h1 class="my-h1">
-                        Here art meets skin, transform your ideas into
-                        stunning custom tattoos
-                        <span class="text-line"></span>
-                        <div class="home-buttons">
-                            <a href="#" class="button-book button-book2" id="button-book">Book Now</a>
-                            <a href="#" class="button-team" id="button-team">Team</a>
-                        </div>
-                    </h1>
-                </div>
+        <section class="home background-slideshow" id="home">
 
 
+            <div class="background-overlay"></div>
+            <div class="container home-content">
+                <img src="images/resiliency- assinatura.png" alt="" class="home-logo">
+                <h1 class="my-h1">
+                    Here art meets skin, transform your ideas into
+                    stunning custom tattoos
+                    <span class="text-line"></span>
+                    <div class="home-buttons">
+                        <a href="#" class="button-book button-book2" id="button-book">Book Now</a>
+                        <a href="#" class="button-team" id="button-team">Team</a>
+                    </div>
+                </h1>
             </div>
+
+
+
 
 
         </section>
 
 
 
-        <section class="about container" id="about">
+        <section class="about container app-section" id="about">
 
             <h1 class="test-h1">SECTION ABOUT - test Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
                 repellendus
@@ -105,9 +105,9 @@
         </section>
 
 
-        <section class="services container" id="services">
+        <section class="services container app-section" id="services">
 
-            <h1 class="test-h1">SECTION HOME - test Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+            <h1 class="test-h1">SECTION SERVICE - test Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
                 repellendus
                 officiis
                 temporibus! Voluptates doloremque architecto corrupti excepturi velit cupiditate eaque iste molestiae
