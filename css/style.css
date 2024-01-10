@@ -36,45 +36,19 @@
     }
 
 
-
-
-    .container-header {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9999;
-
-        /* color: white; */
-
-    }
-
     .container {
         display: flex;
         width: 100%;
         max-width: 1280px;
         margin: 0 auto;
 
-
     }
 
 
-    .home {
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 100svh;
-        width: 100%;
-        /* padding-top: 180px; */
-        margin: 0 auto;
-    }
+
 
     .app-section {
-        padding-top: 140px;
+        padding-top: 120px;
         min-height: 100vh;
     }
 
@@ -84,16 +58,6 @@
         font-family: RodfatTwo;
     }
 
-    .about {
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 100svh;
-
-
-
-
-
-    }
 
     .services {
         height: 100svh;

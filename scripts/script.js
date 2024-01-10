@@ -3,7 +3,7 @@
 
 
 var lightbox = new PhotoSwipeLightbox({
-    gallery: '.test-gallery',
+    gallery: '.studio-gallery',
     children: 'a',
     // dynamic import is not supported in UMD version
     pswpModule: PhotoSwipe

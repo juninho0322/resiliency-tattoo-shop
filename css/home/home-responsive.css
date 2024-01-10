@@ -4,6 +4,18 @@
     }
 }
 
+@media (max-width: 600px) {
 
 
-@media screen and (orientation: landscape) and (max-height: 768px) {}
+    .my-h1 {
+        font-size: 1em;
+
+    }
+
+    .home-logo {
+        margin-bottom: 1em;
+        max-width: 85%;
+
+
+    }
+}

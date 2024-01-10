@@ -54,13 +54,15 @@
     flex-direction: column;
     padding-top: 190px;
     position: relative;
+    /* min-height: 100svh; */
+
 
 }
 
 .home-logo {
     object-fit: contain;
     margin: 0 auto;
-    max-width: 55%;
+    max-width: 60%;
 
 }
 
