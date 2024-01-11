@@ -23,6 +23,7 @@
 .about-right-overlay {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
+
 }
 
 
@@ -35,10 +36,6 @@
     margin-left: auto;
     padding-left: 2.5em;
     padding-right: 2.5em;
-
-
-
-
 }
 
 .h2-about {
@@ -47,9 +44,10 @@
     font-size: 4.5em;
     margin-top: 1.5em;
 
+
 }
 
-.about-content>p {
+.p-about {
     color: var(--primary-b);
     font-family: SkateSans;
     letter-spacing: 0.2em;
