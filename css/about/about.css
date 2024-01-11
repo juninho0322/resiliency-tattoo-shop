@@ -15,7 +15,7 @@
     display: flex;
     flex: 1;
     width: 50%;
-    background: url(/images/05a.jpg) center / cover no-repeat;
+    background: url('../../images/05a.jpg') center / cover no-repeat;
     object-fit: contain;
 
 }
