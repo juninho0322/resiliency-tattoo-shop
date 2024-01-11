@@ -56,7 +56,7 @@
     .about-responsive-background {
         display: flex;
         flex-direction: column;
-        background: url('/images/06a.jpg') center / cover no-repeat;
+        background: url('../../images/06a.jpg') center / cover no-repeat;
         width: 100%;
 
 
