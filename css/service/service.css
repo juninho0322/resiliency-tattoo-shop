@@ -38,8 +38,8 @@
 
 .service-box>h3 {
     color: var(--secondary-a);
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
     padding-top: 1.5em;
 
 }
@@ -60,10 +60,11 @@
 
 .service-box:hover {
     border-color: var(--secondary-a);
-    background: url('../../images/logo-menu-op5.png') center / cover no-repeat;
+    background: url('../../images/logo-menu-op5.png') center / 90% no-repeat;
 
 }
 
 .service-box:hover>.h3-hover {
     font-size: 1.7em;
+
 }
