@@ -8,7 +8,7 @@
 .about-left {
     display: flex;
     width: 50%;
-    background: black;
+    background: var(--dark)
 }
 
 .about-right {
@@ -38,23 +38,9 @@
     padding-right: 2.5em;
 }
 
-.h2-about {
-    font-family: RodfatTwo;
-    color: var(--primary-b);
-    font-size: 4.5em;
-    margin-top: 1.5em;
 
 
-}
 
-.p-about {
-    color: var(--primary-b);
-    font-family: SkateSans;
-    letter-spacing: 0.2em;
-    font-size: 1.2rem;
-    margin: 0;
-
-}
 
 
 

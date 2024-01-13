@@ -1,0 +1,69 @@
+.services {
+    padding-top: 120px;
+    background-color: var(--dark);
+    height: auto;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service-content>p {
+    padding: 1em 2.5em;
+    width: 100%;
+}
+
+.type-services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 2.5em;
+    justify-content: center;
+    gap: 2em;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    border: 1px solid white;
+    padding: 3em;
+    align-items: center;
+}
+
+
+
+.service-box>h3 {
+    color: var(--secondary-a);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 1.5em;
+
+}
+
+.service-box>img {
+    width: 8em;
+    align-items: center;
+}
+
+
+.service-box>p {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+
+
+.service-box:hover {
+    border-color: var(--secondary-a);
+    background: url('../../images/logo-menu-op5.png') center / cover no-repeat;
+
+}
+
+.service-box:hover>.h3-hover {
+    font-size: 1.7em;
+}

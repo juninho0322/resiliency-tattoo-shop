@@ -3,6 +3,7 @@
         --primary-b: #ffe8dd;
         --secondary-a: #16E35E;
         --secondary-b: #ff4600;
+        --dark: #000000;
         box-sizing: border-box;
     }
 
@@ -36,6 +37,8 @@
     }
 
 
+
+
     .container {
         display: flex;
         width: 100%;
@@ -52,12 +55,37 @@
         min-height: 100svh;
     }
 
-
-
-    .test-h1 {
-        font-family: RodfatTwo;
+    p {
+        color: var(--primary-b);
+        font-family: SkateSans;
+        letter-spacing: 0.2em;
+        font-size: 1.2rem;
+        margin: 0;
     }
 
+    .my-h1 {
+        font-family: SkateSans;
+        color: var(--primary-b);
+        text-align: center;
+        letter-spacing: 0.2em;
+        font-size: 1.5rem;
+        padding: 2em 2em 0 2em;
+    }
+
+    h2 {
+        font-family: RodfatTwo;
+        color: var(--primary-b);
+        font-size: 4.5em;
+        /* margin-top: 1.5em; */
+        letter-spacing: 0.1em;
+    }
+
+    h3 {
+        font-family: RodfatTwo;
+        color: var(--primary-b);
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+    }
 
     .services {
         height: 100svh;

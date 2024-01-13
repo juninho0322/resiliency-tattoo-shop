@@ -8,7 +8,7 @@
     align-items: center;
     flex-wrap: wrap;
     /* background: rgba(0, 0, 0, 0.8); */
-    background: black;
+    background: var(--dark);
     z-index: 999;
     border-bottom: 1px solid;
     border-color: var(--primary-b);
@@ -63,6 +63,8 @@ li>a {
     display: inline-block;
     position: relative;
 
+
+
 }
 
 li>a::after {
@@ -103,13 +105,13 @@ li>a.active-nav::after {
     background-color: var(--secondary-a);
     border: none;
     color: var(--primary-b);
-    padding: 1.5em;
+    padding: 0.2em;
     text-align: center;
     text-decoration: none;
     visibility: visible;
     font-size: 1.3rem !important;
     font-family: RodfatTwo;
-    width: 8em;
+    width: 9em;
     height: 3em;
     display: flex;
     justify-content: center;

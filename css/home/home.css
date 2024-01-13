@@ -27,7 +27,7 @@
 
     0%,
     100% {
-        background: url('../../images/06a.jpg') center / cover no-repeat;
+        background: url('../../images/0a.jpg') center / cover no-repeat;
 
     }
 
@@ -66,21 +66,12 @@
 
 }
 
-.my-h1 {
-    font-family: SkateSans;
-    color: var(--primary-b);
-    text-align: center;
-    letter-spacing: 0.2em;
-    font-size: 1.5rem;
-    padding: 2em 2em 0 2em;
-}
 
 .text-line {
-    border: 1px solid;
-    border-color: var(--secondary-a);
+    border: 1px var(--secondary-a)solid;
     display: flex;
-    width: 80%;
-    margin: 0.1em auto;
+    width: 60%;
+    margin: -0.5em auto;
     animation: fade 1000ms infinite;
     -webkit-animation: fade 1000ms infinite;
 
@@ -120,7 +111,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 60%;
-    padding-top: 2.5em;
+    padding-top: 4.5em;
     justify-content: center;
     gap: 3rem;
     margin: 0 auto;
@@ -131,22 +122,13 @@
     display: flex;
     border: 0.1em solid;
     color: var(--primary-b);
-    padding: 1.5em;
+    padding: 1em;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
     text-decoration: none;
-    /* display: inline-block; */
     font-size: 1.3rem !important;
     font-family: RodfatTwo;
-    width: 8em;
+    width: 9em;
     height: 3em;
 
-}
-
-.button-book2 {
-    border: 0.1em solid;
-    border-color: var(--secondary-a);
-    width: 8em;
-    height: 3em;
 }
