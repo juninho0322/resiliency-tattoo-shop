@@ -63,6 +63,7 @@
     position: absolute;
     top: 120px;
     left: 0;
+    bottom: 0;
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
     overflow: scroll !important;

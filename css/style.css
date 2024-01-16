@@ -55,6 +55,15 @@
         min-height: 100svh;
     }
 
+    .btn-whats {
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        background: red;
+        z-index: 999;
+
+    }
+
     p {
         color: var(--primary-b);
         font-family: SkateSans;

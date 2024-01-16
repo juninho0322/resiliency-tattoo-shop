@@ -1,0 +1,21 @@
+@media (min-width: 1100px) {
+    .ml-lg-0 {
+        margin-left: 0 !important;
+
+    }
+
+    .mr-lg-0 {
+        margin-right: 0 !important;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+
+    .service-box {
+        width: calc(45% - 1.5em);
+
+    }
+
+}
