@@ -14,7 +14,7 @@
 @media (max-width: 1100px) {
 
     .service-box {
-        width: calc(45% - 1.5em);
+        width: calc(45% - 2.5em);
 
     }
 
@@ -24,6 +24,7 @@
 
     .service-box {
         width: calc(40% - 0.2em);
+
 
     }
 
@@ -44,14 +45,12 @@
 
 }
 
-@media (max-width: 800px) {
-
+@media (max-width: 700px) {
     .service-box {
-        width: 100%;
+        width: 90%;
         margin-left: 0;
         margin-right: 0;
 
+
     }
-
-
 }
