@@ -19,3 +19,20 @@
     }
 
 }
+
+@media (max-width: 800px) {
+
+    .service-box {
+        width: calc(80% - 1.5em);
+
+
+    }
+
+    .service-box::before {
+
+        background: url('../../images/logo-menu.png') center / 60% no-repeat;
+
+    }
+
+
+}
