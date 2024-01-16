@@ -23,8 +23,7 @@
 @media (max-width: 800px) {
 
     .service-box {
-        width: calc(80% - 1.5em);
-
+        width: calc(40% - 0.2em);
 
     }
 
@@ -42,5 +41,17 @@
     .service-text {
         padding: 0 1.5em;
     }
+
+}
+
+@media (max-width: 800px) {
+
+    .service-box {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
 
 }

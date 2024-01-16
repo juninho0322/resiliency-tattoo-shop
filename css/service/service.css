@@ -57,7 +57,20 @@
     opacity: 0.1;
 }
 
+.service-box-button {
+    position: absolute;
+    background-color: var(--secondary-a);
+    width: 10%;
+    height: 10px;
+    right: 0;
+    bottom: 0;
 
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 50px solid black;
+
+
+}
 
 
 .service-box>h3 {
