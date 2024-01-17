@@ -17,7 +17,7 @@ document.querySelector("#button-book").addEventListener("click", function () {
 });
 
 
-// function click and touch menu-burger activate
+// function click menu-burger activate
 var burgerButton = document.querySelector("#burger");
 var burgerMenu = document.getElementById("burger-menu");
 
@@ -26,6 +26,7 @@ function toggleBurgerMenu() {
     // Toggle visibility
     burgerMenu.classList.toggle("active");
     document.querySelector("body").classList.toggle("noscroll");
+
 
 }
 

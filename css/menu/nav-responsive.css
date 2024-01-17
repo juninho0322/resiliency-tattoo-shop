@@ -76,6 +76,11 @@
 
 }
 
+#burguer.desactive {
+    visibility: hidden;
+
+}
+
 
 
 .burger-list {

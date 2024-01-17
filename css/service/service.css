@@ -67,6 +67,7 @@
     border-left: 50px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 50px solid var(--secondary-a);
+    visibility: hidden;
 
 }
 
@@ -80,6 +81,8 @@
     border-left: 50px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 50px solid black;
+    visibility: hidden;
+
 
 }
 
@@ -109,10 +112,16 @@
 .service-box:hover {
     border-color: var(--secondary-a);
 
-
 }
 
 .service-box:hover>.h3-hover {
     font-size: 1.7em;
+
+}
+
+.service-box:hover>.service-box-button-top,
+.service-box:hover>.service-box-button-bottom {
+    visibility: visible;
+
 
 }

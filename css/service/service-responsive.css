@@ -25,7 +25,6 @@
     .service-box {
         width: calc(40% - 0.2em);
 
-
     }
 
     .service-box::before {
@@ -41,6 +40,11 @@
 
     .service-text {
         padding: 0 1.5em;
+    }
+
+    .service-content>p {
+        padding: 0;
+
     }
 
 }
