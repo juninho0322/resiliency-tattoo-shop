@@ -57,4 +57,29 @@
 
 
     }
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: var(--secondary-a);
+        margin: 0 2em;
+    }
+
+    .divider>img {
+        width: 10%;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .service-content>h2 {
+        font-size: 3em;
+
+    }
+
+    .service-content>p {
+        font-size: 1em;
+    }
 }

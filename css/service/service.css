@@ -4,6 +4,8 @@
     height: auto;
 }
 
+
+
 .service-content {
     display: flex;
     flex-wrap: wrap;
@@ -123,5 +125,28 @@
 .service-box:hover>.service-box-button-bottom {
     visibility: visible;
 
+
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 5em;
+}
+
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--secondary-a);
+    margin: 0 5em;
+}
+
+
+.divider>img {
+    width: 5%;
 
 }

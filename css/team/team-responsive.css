@@ -1,0 +1,22 @@
+@media (max-width: 1100px) {
+    .team-content>img {
+        max-width: 50%;
+        height: auto;
+        margin: 0.8em auto 0;
+
+
+    }
+}
+
+@media (max-width: 700px) {
+    .team-content>h2 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 550px) {
+    .team-content>h2 {
+        text-align: center;
+
+    }
+}

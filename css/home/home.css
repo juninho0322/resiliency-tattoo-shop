@@ -70,7 +70,7 @@
 .text-line {
     border: 1px var(--secondary-a)solid;
     display: flex;
-    width: 60%;
+    width: 65%;
     margin: -0.5em auto;
     animation: fade 1000ms infinite;
     -webkit-animation: fade 1000ms infinite;

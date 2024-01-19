@@ -8,7 +8,7 @@
 .about-left {
     display: flex;
     width: 50%;
-    background: var(--dark)
+    background: var(--dark);
 }
 
 .about-right {
