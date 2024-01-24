@@ -73,6 +73,7 @@
 
 .burger-menu.active {
     visibility: visible;
+    background-color: black;
 
 }
 

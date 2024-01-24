@@ -43,7 +43,7 @@
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 1em;
+    padding: 2em;
     background-color: var(--secondary-a);
     display: none;
     overflow: hidden;
