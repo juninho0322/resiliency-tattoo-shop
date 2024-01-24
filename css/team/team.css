@@ -10,12 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 
 .team-content>img {
     max-width: 40%;
-    margin: 0.8em auto 0;
+    margin: 3em auto 0;
 }
 
 .team-content>h2 {
@@ -29,6 +31,7 @@
     max-width: 1280px;
     margin: 0 auto;
 
+
 }
 
 .artist-box {
@@ -39,7 +42,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border: 1px solid white;
+    border: 1px solid var(--secondary-a);
+    border-bottom: none;
+
 
 }
 
@@ -57,9 +62,9 @@
 
 }
 
-.button-works {
+.button-portfolio {
     display: flex;
-    border: 0.1em solid;
+    /* border: 0.1em solid; */
     color: var(--primary-b);
     padding: 1em;
     align-items: center;
@@ -68,6 +73,7 @@
     font-size: 1.3rem !important;
     font-family: RodfatTwo;
     width: 100%;
-    height: 3em;
+    min-height: 3em;
+    background-color: var(--secondary-a);
 
 }

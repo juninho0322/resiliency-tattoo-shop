@@ -11,6 +11,37 @@ var lightbox = new PhotoSwipeLightbox({
 
 lightbox.init();
 
+
+var lightbox01 = new PhotoSwipeLightbox({
+    gallery: '.portfolio-01',
+    children: 'a',
+    // dynamic import is not supported in UMD version
+    pswpModule: PhotoSwipe
+});
+
+lightbox01.init();
+
+
+var lightbox02 = new PhotoSwipeLightbox({
+    gallery: '.portfolio-02',
+    children: 'a',
+    // dynamic import is not supported in UMD version
+    pswpModule: PhotoSwipe
+});
+
+lightbox02.init();
+
+
+var lightbox03 = new PhotoSwipeLightbox({
+    gallery: '.portfolio-03',
+    children: 'a',
+    // dynamic import is not supported in UMD version
+    pswpModule: PhotoSwipe
+});
+
+lightbox03.init();
+
+
 document.querySelector("#button-book").addEventListener("click", function () {
     alert(`test`);
     console.log(`test`);
@@ -41,8 +72,24 @@ document.querySelectorAll(".js-close").forEach(function (itemMenu) {
 console.log(document.querySelectorAll(".js-close"));
 
 
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
 
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 
 
 
