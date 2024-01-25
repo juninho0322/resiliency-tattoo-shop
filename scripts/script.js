@@ -42,10 +42,10 @@ var lightbox03 = new PhotoSwipeLightbox({
 lightbox03.init();
 
 
-document.querySelector("#button-book").addEventListener("click", function () {
-    alert(`test`);
-    console.log(`test`);
-});
+// document.querySelector("#button-book").addEventListener("click", function () {
+//     alert(`test`);
+//     console.log(`test`);
+// });
 
 
 // function click menu-burger activate

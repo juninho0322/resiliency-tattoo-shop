@@ -1,0 +1,45 @@
+.book {
+    background-color: black;
+    position: relative;
+    z-index: 1;
+
+}
+
+.book-background {
+    display: flex;
+    background: url('/images/07a.jpg') center / cover no-repeat;
+    width: 50%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -2;
+    margin-left: 50%;
+
+}
+
+.book-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5em;
+    justify-content: left;
+    margin: 0 auto;
+    min-height: 100svh;
+
+
+
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 70%;
+    padding: 3em 2em;
+    /* overflow: hidden;
+    overflow-wrap: break-word; */
+    justify-items: left;
+    background-color: rgb(39, 38, 39);
+}
+
+.book-form>h2 {
+    justify-content: center !important;
+}
