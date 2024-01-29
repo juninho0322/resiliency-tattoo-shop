@@ -25,20 +25,22 @@
     <link rel="stylesheet" href="css/faq/faq-responsive.css">
     <link rel="stylesheet" href="css/book/book.css">
     <link rel="stylesheet" href="css/book/book-responsive.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize/normalize.css">
     <link rel="stylesheet" href="css/photoswipe/photoswipe.css">
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
 
 
 </head>
 
 <body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <a href="https://wa.me/4407388351222" class="btn-whats" target="_blank">
         <img src="images/icons/whats.svg" alt="">
@@ -88,8 +90,8 @@
 
         <section class="home background-slideshow" id="home">
             <div class="background-overlay"></div>
-            <div class="container home-content">
-                <img src="images/resiliency- assinatura.png" alt="" class="home-logo">
+            <div class="container home-content " data-aos="fade-down">
+                <img src="images/resiliency- assinatura.png" alt="" class="home-logo" data-aos="fade-down-left">
                 <h1 class="my-h1">Here art meets skin, transform your ideas into custom tattoos </h1>
                 <span class="text-line"></span>
                 <div class="home-buttons">
@@ -107,7 +109,7 @@
 
         <section class="about" id="about">
             <div class="about-left">
-                <div class="app-section about-content">
+                <div class="app-section about-content" data-aos="fade-right" data-aos-duration="1000">
                     <div class="about-text">
                         <h2 class="h2-about">ABOUT OUR STUDIO</h2>
                         <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, velit nostrum
@@ -140,7 +142,8 @@
 
         <section class="services" id="services">
 
-            <div class="container service-content service-text">
+            <div class="container service-content service-text" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="800">
                 <h2>SERVICES</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet eligendi expedita fugit
                     voluptatibus dolore, eum, repudiandae ratione quos soluta quibusdam? Dolorem, aspernatur magnam
@@ -206,7 +209,8 @@
         <section class="team" id="team">
 
             <div class="container app-section team-content">
-                <img src="images/logo-section-team-2.png" alt="">
+                <img src="images/logo-section-team-2.png" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                 <h2> TATTOO ARTISTS</h2>
 
                 <div class="tattoo-artist-container">
@@ -254,7 +258,7 @@
 
         <section class="faq" id="faq">
             <div class="container app-section faq-content">
-                <h2> FAQ </h2>
+                <h2 data-aos="zoom-in-up"> FAQ </h2>
                 <button class="accordion">How much does a tattoo cost? <a>+</a></button>
                 <div class="panel">
                     <p> Tattoo prices vary based on factors such as size, complexity, and the artist's expertise. Small,
@@ -306,7 +310,7 @@
 
         <section class="book" id="book">
             <div class="book-background"> </div>
-            <div class="container book-content">
+            <div class="container book-content" data-aos="zoom-in-right">
                 <div class="form-container ">
                     <h2 class="h2-form"> BOOK NOW </h2>
 
