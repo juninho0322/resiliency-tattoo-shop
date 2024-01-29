@@ -59,6 +59,7 @@
         z-index: 999;
         animation: pulse 2s infinite;
 
+
     }
 
     @keyframes pulse {

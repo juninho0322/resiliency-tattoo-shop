@@ -61,7 +61,7 @@
 
 .service-box-button-bottom {
     position: absolute;
-    background-color: black;
+    background-color: none;
     width: 10%;
     height: 10px;
     right: 0;

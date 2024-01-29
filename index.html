@@ -25,20 +25,26 @@
     <link rel="stylesheet" href="css/faq/faq-responsive.css">
     <link rel="stylesheet" href="css/book/book.css">
     <link rel="stylesheet" href="css/book/book-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize/normalize.css">
     <link rel="stylesheet" href="css/photoswipe/photoswipe.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </head>
 
 <body>
 
-    <a href="https://wa.me/4407388351222" class="btn-whats">
+    <a href="https://wa.me/4407388351222" class="btn-whats" target="_blank">
         <img src="images/icons/whats.svg" alt="">
     </a>
 
-    <header class="container-header">
+    <header class="container-header ">
         <nav class="nav-menu container">
 
             <a href="#" class="nav-logo">
@@ -291,9 +297,9 @@
                         the healing process, don't hesitate to contact the studio for guidance.</p>
                 </div>
 
-                <!-- <div class="divider">
+                <div class="divider">
                     <img src="images/icons/tattoo-g.png" alt="">
-                </div> -->
+                </div>
             </div>
 
         </section>
@@ -301,22 +307,63 @@
         <section class="book" id="book">
             <div class="book-background"> </div>
             <div class="container book-content">
-                <div class="book-form ">
-                    <h2> BOOK NOW </h2>
+                <div class="form-container ">
+                    <h2 class="h2-form"> BOOK NOW </h2>
 
                     <form action="" class="form">
-                        <label for="name" class="form__label">Name</label>
-                        <input type="text" placeholder="Name" class="form__input" id="name" />
+                        <div class="form-label">
+                            <label for="name" class="label-one">Name</label>
+                            <label for="email" class="label-two">Email</label>
+                        </div>
 
-                        <label for="email" class="form__label">Email</label>
-                        <input type="email" placeholder="Email" class="form__input" id="email" />
 
-                        <label for="subject" class="form__label">Subject</label>
-                        <input type="text" placeholder="Subject" class="form__input" id="subject" />
+                        <div class="form-input">
+                            <input type="text" placeholder="Name" class="input input-one" id="name" />
+                            <input type="email" placeholder="Email" class="input input-two" id="email" />
+                        </div>
+
+
+                        <div class="form-label">
+                            <label for="phone" class="label-one">Phone</label>
+                            <label for="location" class="label-two">Address</label>
+                        </div>
+
+
+                        <div class="form-input">
+                            <input type="phone" placeholder="Phone" class="input input-one" id="name" />
+                            <input type="text" placeholder="Address" class="input input-two" id="email" />
+                        </div>
+
+                        <div class="form-label file-input">
+                            <label for="reference " class="reference">Upload your references.</label>
+                            <input type="file" class="file" id="file" name="file" classfile="image/png, image/jpeg"
+                                multiple="multiple" />
+                        </div>
+
+                        <div class="form-label label-msg">
+                            <label for="textarea" class="label-one">Tell us your idea</label>
+                        </div>
+
+
+                        <div class="form-input">
+                            <textarea placeholder="write your tattoo idea... e.g:. place, size"
+                                class="input input-msg"></textarea>
+                        </div>
+
+
+
+                        <a href="#book" class="button-book button-send" id="button-book">Send Message</a>
+
+
 
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="footer">
+
+
         </section>
 
     </main>
