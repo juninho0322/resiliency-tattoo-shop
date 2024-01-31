@@ -73,7 +73,7 @@
 
 
 
-            <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu" id="burger-menu" data-aos="fade-right">
                 <ul class="burger-list">
                     <li><a class="js-close" href="#home">Home</a></li>
                     <li><a class="js-close" href="#about">About</a></li>
@@ -311,58 +311,48 @@
         <section class="book" id="book">
             <div class="book-background"> </div>
             <div class="container book-content" data-aos="zoom-in-right">
-                <div class="form-container ">
-                    <h2 class="h2-form"> BOOK NOW </h2>
 
-                    <form action="" class="form">
-                        <div class="form-label">
-                            <label for="name" class="label-one">Name</label>
-                            <label for="email" class="label-two">Email</label>
+                <form action="">
+
+                    <div class="form-flex">
+                        <h2>book now</h2>
+                        <div class="form-control first-name">
+                            <label for="">Name</label>
+                            <input type="text" class="input-name">
                         </div>
-
-
-                        <div class="form-input">
-                            <input type="text" placeholder="Name" class="input input-one" id="name" />
-                            <input type="email" placeholder="Email" class="input input-two" id="email" />
+                        <div class="form-control email">
+                            <label for="">Email</label>
+                            <input type="text" class="input-email">
                         </div>
-
-
-                        <div class="form-label">
-                            <label for="phone" class="label-one">Phone</label>
-                            <label for="location" class="label-two">Address</label>
+                        <div class="form-control phone">
+                            <label for="">Phone</label>
+                            <input type="text" class="input-phone">
                         </div>
-
-
-                        <div class="form-input">
-                            <input type="phone" placeholder="Phone" class="input input-one" id="name" />
-                            <input type="text" placeholder="Address" class="input input-two" id="email" />
+                        <div class="form-control address">
+                            <label for="">Address</label>
+                            <input type="text" class="input-address">
                         </div>
-
-                        <div class="form-label file-input">
-                            <label for="reference " class="reference">Upload your references.</label>
-                            <input type="file" class="file" id="file" name="file" classfile="image/png, image/jpeg"
-                                multiple="multiple" />
+                        <div class="form-control reference">
+                            <label for="">Upload your references here.</label>
+                            <input type="file" id="myFile" name="filename">
                         </div>
-
-                        <div class="form-label label-msg">
-                            <label for="textarea" class="label-one">Tell us your idea</label>
-                        </div>
-
-
-                        <div class="form-input">
-                            <textarea placeholder="write your tattoo idea... e.g:. place, size"
-                                class="input input-msg"></textarea>
+                        <div class="form-control message">
+                            <label for="">Leave us a message</label>
+                            <textarea name="" id=""></textarea>
                         </div>
 
 
 
-                        <a href="#book" class="button-book button-send" id="button-book">Send Message</a>
+                        <a href="#book" class="button-book button-msg" id="button-book">Book Now</a>
 
-
-
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
+            </form>
+
+
+            </div>
+
         </section>
 
         <section class="footer">

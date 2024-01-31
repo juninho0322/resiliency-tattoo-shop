@@ -61,7 +61,7 @@ function toggleBurgerMenu() {
 
 }
 
-// Click event
+// Click event burger menu
 burgerButton.addEventListener("click", toggleBurgerMenu);
 
 document.querySelectorAll(".js-close").forEach(function (itemMenu) {
@@ -72,6 +72,8 @@ document.querySelectorAll(".js-close").forEach(function (itemMenu) {
 console.log(document.querySelectorAll(".js-close"));
 
 
+
+// accordion faq section
 var acc = document.getElementsByClassName("accordion");
 var i;
 

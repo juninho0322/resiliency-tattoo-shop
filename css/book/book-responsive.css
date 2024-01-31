@@ -1,0 +1,41 @@
+@media (max-width: 1000px) {
+    .book-background {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .book-content {
+        padding: 5.5em 2em;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    .form-flex {
+        min-width: 100%;
+        padding: 1em;
+        border-right: none;
+        border-left: none;
+    }
+
+    .form-control {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .book-content {
+        padding: 0;
+        height: auto;
+    }
+
+    .form-flex>h2 {
+
+        text-align: center;
+    }
+
+    .button-msg {
+        display: flex;
+
+    }
+}

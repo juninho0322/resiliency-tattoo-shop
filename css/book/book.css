@@ -19,118 +19,105 @@
 .book-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 9.5em 2em;
+    padding: 130px 2em;
     justify-content: left;
     margin: 0 auto;
     min-height: 100svh;
 
+
 }
 
-.form-container {
+.form-flex {
     display: flex;
-    flex-direction: column;
-    min-width: 70%;
-    height: 80vh;
-    padding: 2em;
-    /* overflow: hidden;
-    overflow-wrap: break-word; */
-    justify-items: left;
+    flex-direction: row;
+    border: 1px solid black;
+    max-width: 70%;
+    border: 1px solid var(--secondary-a);
+    padding: 25px 50px;
+    flex-wrap: wrap;
     background-color: black;
-    border: 1px solid var(--secondary-a);
 }
 
-.h2-form {
-    margin: 0;
-    /* padding-bottom: 0.5em; */
-    height: 2em;
+.form-flex>h2 {
     width: 100%;
-
+    margin: 0;
+    padding-bottom: 0.2em;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    /* margin: 0; */
-
-}
-
-.form-label {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0.5em;
-}
-
-.form-input {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2em;
-}
-
-.form-label>label,
-.form-input {
-    font-family: RodfatTwo;
-    color: white;
-
-}
-
-.label-one {
+.form-control {
     width: 50%;
-
+    padding: 1em 1em 0 0;
 }
 
-.label-two {
-    width: 50%;
-    margin-left: 2em;
-}
-
-
-
-.input {
-    width: 50%;
-    background-color: rgb(202, 202, 202);
-    border: none;
+.form-control>input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     height: 3em;
-    font-family: SkateSans;
-    letter-spacing: 0.2em;
+    background-color: #202020;
+    margin-top: 0.5em;
+    color: white;
 
 }
 
-.input-one {
-    margin-right: 2em;
+input[type="text"],
+input[type="password"],
+textarea {
+    border: none;
+    outline: none;
+    /* border-bottom: 1px solid #ccc; */
+    /* You can adjust the color and thickness of the outline */
 }
 
-.file-input {
+input[type=text]:focus {
     border: 1px solid var(--secondary-a);
-    border-left: none;
-    border-right: none;
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
 }
 
-.file-input .reference {
-    width: 50%;
-
-
-}
-
-.file-input .file {
-    width: 50%;
-    margin-left: 2em;
+.form-control>label {
+    font-size: 1.5em;
     font-family: SkateSans;
+    letter-spacing: 2px;
     color: white;
 }
 
-.label-msg {
-    padding-top: 2em;
+.reference {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    border-top: 1px solid var(--secondary-a);
+    border-bottom: 1px solid var(--secondary-a);
+    min-height: 0.5em;
 }
 
-.input-msg {
+.reference>label {
+    width: 50%;
+}
+
+.reference>input {
+    padding-left: 1em;
+    width: 50%;
+    background-color: black !important;
+}
+
+
+.message {
+    width: 100%;
+}
+
+.message>textarea {
+
     width: 100%;
     height: 5em;
+    background-color: #202020;
+    border: none;
+    margin-top: 0.5em;
     resize: none;
+    color: white;
+
 }
 
-.button-send {
+.button-msg {
+    margin-top: 1em;
     width: 15em;
 }
