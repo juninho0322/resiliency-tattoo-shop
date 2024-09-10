@@ -1,127 +1,130 @@
 .book {
-    background-color: black;
-    position: relative;
-    z-index: 1;
-
+  background-color: black;
+  position: relative;
+  z-index: 1;
 }
 
 .book-background {
-    display: flex;
-    background: url('/images/07a.jpg') center / cover no-repeat;
-    width: 50%;
-    min-height: 100vh;
-    position: absolute;
-    z-index: -2;
-    margin-left: 50%;
-
+  display: flex;
+  background: url("/images/07a.jpg") center / cover no-repeat;
+  width: 50%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -2;
+  margin-left: 50%;
 }
 
 .book-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 130px 2em;
-    justify-content: left;
-    margin: 0 auto;
-    min-height: 100svh;
-
-
+  display: flex;
+  flex-wrap: wrap;
+  padding: 130px 2em;
+  justify-content: left;
+  margin: 0 auto;
+  min-height: 100svh;
 }
 
 .form-flex {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    max-width: 70%;
-    border: 1px solid var(--secondary-a);
-    padding: 25px 50px;
-    flex-wrap: wrap;
-    background-color: black;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  max-width: 70%;
+  border: 1px solid var(--secondary-a);
+  padding: 25px 50px;
+  flex-wrap: wrap;
+  background-color: black;
 }
 
-.form-flex>h2 {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 0.2em;
+.form-flex > h2 {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0.2em;
 }
 
 .form-control {
-    width: 50%;
-    padding: 1em 1em 0 0;
+  width: 50%;
+  padding: 1em 1em 0 0;
 }
 
-.form-control>input {
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    height: 3em;
-    background-color: #202020;
-    margin-top: 0.5em;
-    color: white;
-
+.form-control > input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 3em;
+  background-color: #202020;
+  margin-top: 0.5em;
+  color: white;
 }
 
 input[type="text"],
 input[type="password"],
 textarea {
-    border: none;
-    outline: none;
-    /* border-bottom: 1px solid #ccc; */
-    /* You can adjust the color and thickness of the outline */
+  border: none;
+  outline: none;
+  /* border-bottom: 1px solid #ccc; */
+  /* You can adjust the color and thickness of the outline */
 }
 
-input[type=text]:focus {
-    border: 1px solid var(--secondary-a);
+input[type="text"]:focus {
+  border: 1px solid var(--secondary-a);
 }
 
-.form-control>label {
-    font-size: 1.5em;
-    font-family: SkateSans;
-    letter-spacing: 2px;
-    color: white;
+.form-control > label {
+  font-size: 1.5em;
+  font-family: SkateSans;
+  letter-spacing: 2px;
+  color: white;
 }
 
 .reference {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding-bottom: 1em;
-    margin-top: 2em;
-    border-top: 1px solid var(--secondary-a);
-    border-bottom: 1px solid var(--secondary-a);
-    min-height: 0.5em;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  border-top: 1px solid var(--secondary-a);
+  border-bottom: 1px solid var(--secondary-a);
+  min-height: 0.5em;
 }
 
-.reference>label {
-    width: 50%;
+.reference > label {
+  width: 50%;
 }
 
-.reference>input {
-    padding-left: 1em;
-    width: 50%;
-    background-color: black !important;
+.reference > input {
+  padding-left: 1em;
+  width: 50%;
+  background-color: black !important;
 }
-
 
 .message {
-    width: 100%;
+  width: 100%;
 }
 
-.message>textarea {
-
-    width: 100%;
-    height: 5em;
-    background-color: #202020;
-    border: none;
-    margin-top: 0.5em;
-    resize: none;
-    color: white;
-
+.message > textarea {
+  width: 100%;
+  height: 5em;
+  background-color: #202020;
+  border: none;
+  margin-top: 0.5em;
+  resize: none;
+  color: white;
 }
 
 .button-msg {
-    margin-top: 1em;
-    width: 15em;
+  margin-top: 1em;
+  width: 15em;
 }
 
 .book-content .divider {
-    margin-top: 6em;
+  margin-top: 6em;
+}
+
+#loader {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: #4caf50;
+  z-index: 1000;
 }

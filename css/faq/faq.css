@@ -1,68 +1,66 @@
 .faq {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background: black;
-    padding-bottom: 8em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: black;
+  padding-bottom: 8em;
 }
 
 .faq-content {
-    display: flex;
-    flex-direction: column;
-    padding-top: 80px !important;
-    padding: 0 5em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px !important;
+  padding: 0 5em;
 }
 
 .faq-content h2 {
-    text-align: center;
+  text-align: center;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    display: flex;
-    background-color: black;
-    cursor: pointer;
-    padding: 1em;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-family: RodfatTwo;
-    color: var(--primary-b);
-    font-size: 1.3em;
-    letter-spacing: 0.1em;
-    justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  background-color: black;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: RodfatTwo;
+  color: var(--primary-b);
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: var(--secondary-a);
+  background-color: var(--secondary-a);
+  color: #201516;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 2em;
-    /* background-color: var(--secondary-a); */
-    display: none;
-    overflow: hidden;
-    border: 1px solid var(--secondary-a);
-
+  padding: 2em;
+  /* background-color: var(--secondary-a); */
+  display: none;
+  overflow: hidden;
+  border: 1px solid var(--secondary-a);
 }
 
-.panel>p {
-    font-size: 1.0em;
-    color: white;
-    letter-spacing: none;
-
+.panel > p {
+  font-size: 1em;
+  color: white;
+  letter-spacing: none;
 }
 
-.accordion>a {
-    margin-right: 0;
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
+.accordion > a {
+  margin-right: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
 }

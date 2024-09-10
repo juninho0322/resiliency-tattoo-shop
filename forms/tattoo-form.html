@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resiliency Forms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="bg-black w-full h-20 text-white flex justify-center items-center"
+    >
+      <p class="text-3xl">Tattoo Consent Form</p>
+    </div>
+    <form class="m-10 space-y-6">
+      <!-- Checkbox 1 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox1"
+          name="option1"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox1" class="text-gray-700"
+          >I fully understand the risks, known and unknown, can lead to injury
+          including but not limited to: infections, scarring, difficulties in
+          the detection of melanoma and allergic reaction to tattoo pigment,
+          latex gloves and or soaps. Having been informed of the potential risks
+          associated with getting a tattoo, I wish to proceed with the tattoo
+          procedures and application and freely accept and expressly assume any
+          and all risks that may arise from tattooing.</label
+        >
+      </div>
+
+      <!-- Checkbox 2 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox2"
+          name="option2"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox2" class="text-gray-700"
+          >I waive and release to the fullest extent permitted by law any
+          persons of the Tattoo Studio from all liability whatsoever, including
+          but not limited to, any and all claims or causes of actions that I, my
+          estate, heirs, executors or assign may have for personal injury or
+          otherwise, including any direct and/ or consequential damages, which
+          results or arise from the procedure and application of my tattoo,
+          whether caused by the negligence or fault of either the Tattoo Studio
+          or otherwise.</label
+        >
+      </div>
+
+      <!-- Checkbox 3 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox3"
+          name="option3"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox3" class="text-gray-700"
+          >I am not under the influence of alcohol or drugs, and I am
+          voluntarily submitting to be tattooed by the Tattoo Studio without
+          duress or coercion.</label
+        >
+      </div>
+
+      <!-- Checkbox 4 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox4"
+          name="option4"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox4" class="text-gray-700"
+          >I do not suffer from diabetes, epilepsy, hemophilia, heart
+          condition(s), nor do I take blood-thinning medication. I do not have
+          any other medical or skin condition that may interfere with the
+          procedure, application or healing of the tattoo. I am not pregnant or
+          nursing. I do not have a mental impairment that may affect my judgment
+          in getting a tattoo.</label
+        >
+      </div>
+
+      <!-- Checkbox 5 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox5"
+          name="option5"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox5" class="text-gray-700"
+          >I agree that the Tattoo Studio has a NO REFUND policy on tattoos and
+          or retail sales and I will not ask for a refund for any reason
+          whatsoever.</label
+        >
+      </div>
+
+      <!-- Checkbox 6 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox6"
+          name="option6"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox6" class="text-gray-700"
+          >I have been given aftercare instructions and understand that the
+          aftercare process is up to each individual customer, and any problem
+          that arises with the tattoo after it is completed is not part of the
+          Tattoo Studio or employees responsibility.</label
+        >
+      </div>
+
+      <!-- Checkbox 7 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox7"
+          name="option7"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox7" class="text-gray-700"
+          >I also understand that the employees at the Tattoo Studios are
+          operating in compliance to the law, and will give me the professional
+          standard, in terms of sterilization, usage of disposable instruments,
+          and artistic standard.</label
+        >
+      </div>
+
+      <!-- Checkbox 8 -->
+      <div class="flex items-center gap-4">
+        <input
+          type="checkbox"
+          id="checkbox8"
+          name="option8"
+          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+        />
+        <label for="checkbox8" class="text-gray-700"
+          >I hereby declare that I am of legal age (and have provided valid
+          proof of age and identification) and am competent to sign this
+          agreement.</label
+        >
+      </div>
+
+      <!-- Name -->
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-bold mb-2"
+          >Full Name *</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="mb-4">
+        <label for="dob" class="block text-gray-700 font-bold mb-2"
+          >Date of Birth *</label
+        >
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Phone -->
+      <div class="mb-4">
+        <label for="phone" class="block text-gray-700 font-bold mb-2"
+          >Phone</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(123) 456-7890"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold mb-2"
+          >Email</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="john.doe@example.com"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+        />
+      </div>
+
+      <!-- City/State -->
+      <div class="mb-4">
+        <label for="city-state" class="block text-gray-700 font-bold mb-2"
+          >City/State *</label
+        >
+        <input
+          type="text"
+          id="city-state"
+          name="city-state"
+          placeholder="City, State"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Upload ID Photo -->
+      <div class="mb-4">
+        <label for="id-photo" class="block text-gray-700 font-bold mb-2"
+          >Upload a photo of your ID *</label
+        >
+        <input
+          type="file"
+          id="id-photo"
+          name="id-photo"
+          accept="image/*"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Signature -->
+      <div class="mb-4">
+        <label for="signature" class="block text-gray-700 font-bold mb-2"
+          >Signature *</label
+        >
+        <canvas
+          id="signature"
+          class="border w-full h-32 bg-gray-100 rounded-lg"
+        ></canvas>
+        <p class="text-sm text-gray-500 mt-1">
+          Use your mouse or finger to sign.
+        </p>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button
+          type="submit"
+          class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <script src="signature.js"></script>
+    <script src="pdf.js"></script>
+  </body>
+</html>

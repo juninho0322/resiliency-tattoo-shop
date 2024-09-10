@@ -1,424 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height"
+    />
     <title>Resiliency Tattoo Shop</title>
 
     <!-- FAV ICON -->
-    <link rel="icon" href="images/fav.png">
+    <link rel="icon" href="images/fav.png" />
 
     <!-- CSS NATIVE -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu/nav.css">
-    <link rel="stylesheet" href="css/menu/nav-responsive.css">
-    <link rel="stylesheet" href="css/home/home.css">
-    <link rel="stylesheet" href="css/home/home-responsive.css">
-    <link rel="stylesheet" href="css/about/about.css">
-    <link rel="stylesheet" href="css/about/about-responsive.css">
-    <link rel="stylesheet" href="css/service/service.css">
-    <link rel="stylesheet" href="css/service/service-responsive.css">
-    <link rel="stylesheet" href="css/team/team.css">
-    <link rel="stylesheet" href="css/team/team-responsive.css">
-    <link rel="stylesheet" href="css/faq/faq.css">
-    <link rel="stylesheet" href="css/faq/faq-responsive.css">
-    <link rel="stylesheet" href="css/book/book.css">
-    <link rel="stylesheet" href="css/book/book-responsive.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
-    <link rel="stylesheet" href="css/footer/footer-responsive.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu/nav.css" />
+    <link rel="stylesheet" href="css/menu/nav-responsive.css" />
+    <link rel="stylesheet" href="css/home/home.css" />
+    <link rel="stylesheet" href="css/home/home-responsive.css" />
+    <link rel="stylesheet" href="css/about/about.css" />
+    <link rel="stylesheet" href="css/about/about-responsive.css" />
+    <link rel="stylesheet" href="css/service/service.css" />
+    <link rel="stylesheet" href="css/service/service-responsive.css" />
+    <link rel="stylesheet" href="css/team/team.css" />
+    <link rel="stylesheet" href="css/team/team-responsive.css" />
+    <link rel="stylesheet" href="css/faq/faq.css" />
+    <link rel="stylesheet" href="css/faq/faq-responsive.css" />
+    <link rel="stylesheet" href="css/book/book.css" />
+    <link rel="stylesheet" href="css/book/book-responsive.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
+    <link rel="stylesheet" href="css/footer/footer-responsive.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize/normalize.css">
-    <link rel="stylesheet" href="css/photoswipe/photoswipe.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize/normalize.css" />
+    <link rel="stylesheet" href="css/photoswipe/photoswipe.css" />
+  </head>
 
-
-
-
-</head>
-
-<body>
-
+  <body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
 
-    <a href="https://api.whatsapp.com/send?phone=4407388351222" class="btn-whats" target="_blank">
-        <img src="images/icons/whats.svg" alt="">
+    <a
+      href="https://api.whatsapp.com/send?phone=4407707484672"
+      class="btn-whats"
+      target="_blank"
+    >
+      <img src="images/icons/whats.svg" alt="" />
     </a>
 
+    <header class="container-header" id="container-header">
+      <nav class="nav-menu container">
+        <a href="#" class="nav-logo">
+          <img src="images/logo-menu.png" class="logo-menu" alt="Your Logo" />
+        </a>
 
-    <header class="container-header ">
-        <nav class="nav-menu container">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
 
-            <a href="#" class="nav-logo">
-                <img src="images/logo-menu.png" class="logo-menu" alt="Your Logo">
-            </a>
+        <div>
+          <a href="#book" class="button-book" id="button-book">Book Now</a>
+        </div>
 
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+        <div class="burger" id="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-            <div>
-                <a href="#book" class="button-book" id="button-book">Book Now</a>
-            </div>
-
-            <div class="burger" id="burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-
-
-            <div class="burger-menu" id="burger-menu" data-aos="fade-right">
-                <ul class="burger-list">
-                    <li><a class="js-close" href="#home">Home</a></li>
-                    <li><a class="js-close" href="#about">About</a></li>
-                    <li><a class="js-close" href="#services">Services</a></li>
-                    <li><a class="js-close" href="#team">Team</a></li>
-                    <li><a class="js-close" href="#faq">FAQ</a></li>
-                    <img src="images/resiliency- assinatura.png" alt="" class="home-logo">
-                </ul>
-            </div>
-        </nav>
+        <div class="burger-menu" id="burger-menu" data-aos="fade-right">
+          <ul class="burger-list">
+            <li><a class="js-close" href="#home">Home</a></li>
+            <li><a class="js-close" href="#about">About</a></li>
+            <li><a class="js-close" href="#services">Services</a></li>
+            <li><a class="js-close" href="#team">Team</a></li>
+            <li><a class="js-close" href="#faq">FAQ</a></li>
+            <img
+              src="images/resiliency- assinatura.png"
+              alt=""
+              class="home-logo"
+            />
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-        <section class="home background-slideshow" id="home">
-            <div class="background-overlay"></div>
-            <div class="container home-content " data-aos="fade-down">
-                <img src="images/resiliency- assinatura.png" alt="" class="home-logo" data-aos="fade-down-left">
-                <h1 class="my-h1">Here art meets skin, transform your ideas into custom tattoos </h1>
-                <span class="text-line"></span>
-                <div class="home-buttons">
-                    <a href="#book" class="button-book button-book2" id="button-book">Book Now</a>
-                    <a href="#team" class="button-team" id="button-team">Team</a>
-                </div>
-
-            </div>
-
-
-
-        </section>
-
-
-
-        <section class="about" id="about">
-            <div class="about-left">
-                <div class="app-section about-content" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="about-text">
-                        <h2 class="h2-about">ABOUT OUR STUDIO</h2>
-                        <p class="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, velit nostrum
-                            modi quo numquam
-                            sunt
-                            aut dolorum quia asperiores! Eos aperiam laborum omnis quod voluptatem autem, totam nam
-                            dignissimos corporis.</p>
-                    </div>
-                    <div class="about-responsive-background">
-                        <div class="about-responsive-background-overlay">
-                            <div class="studio-gallery">
-                                <a href="images/06a.jpg" class="button-book button-studio-gallery" id="button-book"
-                                    data-pswp-width="1200" data-pswp-height="600">Studio
-                                    Gallery </a>
-                                <a href="images/02.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                                <a href="images/05.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                                <a href="images/03.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-right">
-                <div class="about-right-overlay"> </div>
-            </div>
-
-
-        </section>
-
-
-        <section class="services" id="services">
-
-            <div class="container service-content service-text" data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="800">
-                <h2>SERVICES</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet eligendi expedita fugit
-                    voluptatibus dolore, eum, repudiandae ratione quos soluta quibusdam? Dolorem, aspernatur magnam
-                    ipsum nisi numquam maxime doloremque culpa.</p>
-                <div class="type-services">
-
-                    <div class="service-box ml-lg-0">
-                        <img src="images/icons/tattoo-w.png" alt="">
-                        <h3 class="h3-hover">TATTOO</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                        <div class="service-box-button-bottom"> </div>
-                        <div class="service-box-button-top"> </div>
-                    </div>
-
-                    <div class="service-box">
-                        <img src="images/icons/piercings-w.png" alt="">
-                        <h3 class="h3-hover">PIERCING</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                        <div class="service-box-button-bottom"> </div>
-                        <div class="service-box-button-top"> </div>
-                    </div>
-
-                    <div class="service-box mr-lg-0">
-                        <img src="images/icons/laser-w.png" alt="">
-                        <h3 class="h3-hover">REMOVAL</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                        <div class="service-box-button-bottom"> </div>
-                        <div class="service-box-button-top"> </div>
-                    </div>
-
-                    <div class="service-box ml-lg-0">
-                        <img src="images/icons/ink-w.png" alt="">
-                        <h3 class="h3-hover">SUPPLIES</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                        <div class="service-box-button-bottom"> </div>
-                        <div class="service-box-button-top"> </div>
-                    </div>
-
-                    <div class="service-box">
-                        <img src="images/icons/cream-w.png" alt="">
-                        <h3 class="h3-hover">AFTERCARE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                        <div class="service-box-button-bottom"> </div>
-                        <div class="service-box-button-top"> </div>
-                    </div>
-
-                    <div class="service-box mr-lg-0">
-                        <img src="images/icons/tshirt-w.png" alt="">
-                        <h3 class="h3-hover">T-SHIRTS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                        <div class="service-box-button-bottom"> </div>
-                        <div class="service-box-button-top"> </div>
-                    </div>
-
-                </div>
-                <div class="divider">
-                    <img src="images/icons/tattoo-g.png" alt="">
-                </div>
-            </div>
-
-        </section>
-
-        <section class="team" id="team">
-
-            <div class="container app-section team-content">
-                <img src="images/logo-section-team-2.png" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
-                <h2> TATTOO ARTISTS</h2>
-
-                <div class="tattoo-artist-container">
-
-
-                    <div class="artist-box portfolio-01">
-                        <img src="images/tattoist/01.jpg" alt="">
-                        <p>Realism / Portrait Tattoist</p>
-                        <h3>Cleyton Cassino</h3>
-                        <a href="images/01.jpg" class="button-portfolio" id="button-portfolio" data-pswp-width="1200"
-                            data-pswp-height="600">Portfolio</a>
-                        <a href="images/02.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                        <a href="images/05.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                        <a href="images/03.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                    </div>
-
-                    <div class="artist-box portfolio-02">
-                        <img src="images/tattoist/01.jpg" alt="">
-                        <p>Realism / Portrait Tattoist</p>
-                        <h3>Cleyton Cassino</h3>
-                        <a href="images/01.jpg" class="button-portfolio" id="button-portfolio" data-pswp-width="1200"
-                            data-pswp-height="600">Portfolio</a>
-                        <a href="images/02.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                        <a href="images/05.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                        <a href="images/04a.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                    </div>
-
-                    <div class="artist-box portfolio-03">
-                        <img src="images/tattoist/01.jpg" alt="">
-                        <p>Realism / Portrait Tattoist</p>
-                        <h3>Cleyton Cassino</h3>
-                        <a href="images/01.jpg" class="button-portfolio" id="button-portfolio" data-pswp-width="1200"
-                            data-pswp-height="600">Portfolio</a>
-                        <a href="images/02.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                        <a href="images/05.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                        <a href="images/06a.jpg" data-pswp-width="1200" data-pswp-height="600"></a>
-                    </div>
-                    <div class="divider">
-                        <img src="images/icons/tattoo-g.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="faq" id="faq">
-            <div class="container app-section faq-content">
-                <h2 data-aos="zoom-in-up"> FAQ </h2>
-                <button class="accordion">How much does a tattoo cost? <a>+</a></button>
-                <div class="panel">
-                    <p> Tattoo prices vary based on factors such as size, complexity, and the artist's expertise. Small,
-                        simple tattoos typically have a lower cost, while larger, intricate designs may be more
-                        expensive. It's best to schedule a consultation with one of our artists to get an accurate quote
-                        for your specific tattoo idea.</p>
-                </div>
-
-                <button class="accordion"> Do I need to make an appointment, or can I walk in for a
-                    tattoo?<a>+</a></button>
-                <div class="panel">
-                    <p>Answer: Both options are available! While appointments are recommended, we also welcome walk-ins
-                        whenever our artists have availability. To ensure you get the design and time slot you prefer,
-                        we advise scheduling an appointment in advance.</p>
-                </div>
-
-                <button class="accordion">How should I prepare for my tattoo appointment?<a>+</a></button>
-                <div class="panel">
-                    <p>To ensure a smooth tattoo experience, it's essential to be well-rested, hydrated, and have a good
-                        meal before your appointment. Avoid alcohol and excessive caffeine on the day of your tattoo.
-                        Wear comfortable clothing that allows easy access to the area being tattooed, and bring any
-                        reference materials or ideas you may have.</p>
-                </div>
-
-                <button class="accordion">Is the tattooing process painful?<a>+</a></button>
-                <div class="panel">
-                    <p>Pain tolerance varies from person to person, and everyone experiences tattooing differently.
-                        While some discomfort is normal, many clients find the pain to be manageable and well worth the
-                        final result. Our skilled artists work efficiently to minimize any discomfort, and they can
-                        provide tips for making the experience more comfortable.</p>
-                </div>
-
-                <button class="accordion">How long does it take for a tattoo to heal, and what is the aftercare
-                    process?<a>+</a></button>
-                <div class="panel">
-                    <p>Healing times vary based on the size and complexity of the tattoo. On average, it takes about 2-4
-                        weeks for a tattoo to fully heal. During this time, it's crucial to follow the aftercare
-                        instructions provided by your artist, including keeping the tattoo clean, avoiding sun exposure,
-                        and refraining from scratching or picking at the healing skin. If you have any concerns during
-                        the healing process, don't hesitate to contact the studio for guidance.</p>
-                </div>
-
-                <div class="divider">
-                    <img src="images/icons/tattoo-g.png" alt="">
-                </div>
-            </div>
-
-        </section>
-
-        <section class="book" id="book">
-            <div class="book-background"> </div>
-            <div class="container book-content" data-aos="zoom-in-right">
-
-                <form action="">
-
-                    <div class="form-flex">
-                        <h2>book now</h2>
-                        <div class="form-control first-name">
-                            <label for="">Name</label>
-                            <input type="text" class="input-name">
-                        </div>
-                        <div class="form-control email">
-                            <label for="">Email</label>
-                            <input type="text" class="input-email">
-                        </div>
-                        <div class="form-control phone">
-                            <label for="">Phone</label>
-                            <input type="text" class="input-phone">
-                        </div>
-                        <div class="form-control address">
-                            <label for="">Address</label>
-                            <input type="text" class="input-address">
-                        </div>
-                        <div class="form-control reference">
-                            <label for="">Upload your references here.</label>
-                            <input type="file" id="myFile" name="filename">
-                        </div>
-                        <div class="form-control message">
-                            <label for="">Leave us a message</label>
-                            <textarea name="" id=""></textarea>
-                        </div>
-
-
-
-                        <a href="#book" class="button-book button-msg" id="button-book">Send Message</a>
-
-                    </div>
-                </form>
-                <div class="divider">
-                    <img src="images/icons/tattoo-g.png" alt="">
-                </div>
-            </div>
-
-
-
-
-
-        </section>
-
-        <section class="footer">
-
-            <div class="footer-container">
-                <div class="footer-left">
-                    <h3 class="h3-footer">Address</h3>
-                    <p>24, Westwood Road</p>
-                    <p>Coventry - UK</p>
-                    <p>Phone: +44 07388351222</p>
-
-
-                </div>
-
-                <div class="footer-middle">
-
-                    <img src="images/logo-section-team-2.png" alt="" class="logo-middle">
-                    <div class="footer-middle-buttons">
-
-                        <img src="images/icons/facebook.png" alt="" class="social-buttons">
-                        <img src="images/icons/instagram.png" alt="" class="social-buttons">
-                        <img src="images/icons/envelope.png" alt="" class="social-buttons">
-
-                    </div>
-                </div>
-
-                <div class="footer-right">
-                    <h3 class="h3-footer">Open hours</h3>
-                    <p>Monday - Saturday</p>
-                    <p><u>10AM to 6PM</u></p>
-                    <p>Sunday</p>
-                    <p> <u>Closed</u></p>
-
-                </div>
-            </div>
-
-        </section>
-        <div class="footer-end">
-            <div class="container">
-                <p> © 2024 All Rights Reserved - Luis Fernandes Jr </p>
-            </div>
+      <section class="home background-slideshow" id="home">
+        <div class="background-overlay"></div>
+        <div class="container home-content" data-aos="fade-down">
+          <img
+            src="images/resiliency- assinatura.png"
+            alt=""
+            class="home-logo"
+            data-aos="fade-down-left"
+          />
+          <h1 class="my-h1">
+            Here art meets skin, transform your ideas into custom tattoos
+          </h1>
+          <span class="text-line"></span>
+          <div class="home-buttons">
+            <a href="#book" class="button-book button-book2" id="button-book"
+              >Book Now</a
+            >
+            <a href="#team" class="button-team" id="button-team">Team</a>
+          </div>
         </div>
+      </section>
 
+      <section class="about" id="about">
+        <div class="about-left">
+          <div
+            class="app-section about-content"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div class="about-text">
+              <h2 class="h2-about">ABOUT OUR STUDIO</h2>
+              <p class="p-about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                velit nostrum modi quo numquam sunt aut dolorum quia asperiores!
+                Eos aperiam laborum omnis quod voluptatem autem, totam nam
+                dignissimos corporis.
+              </p>
+            </div>
+            <div class="about-responsive-background">
+              <div class="about-responsive-background-overlay">
+                <div class="studio-gallery">
+                  <a
+                    href="images/06a.jpg"
+                    class="button-book button-studio-gallery"
+                    id="button-book"
+                    data-pswp-width="1200"
+                    data-pswp-height="600"
+                    >Studio Gallery
+                  </a>
+                  <a
+                    href="images/02.jpg"
+                    data-pswp-width="1200"
+                    data-pswp-height="600"
+                  ></a>
+                  <a
+                    href="images/05.jpg"
+                    data-pswp-width="1200"
+                    data-pswp-height="600"
+                  ></a>
+                  <a
+                    href="images/03.jpg"
+                    data-pswp-width="1200"
+                    data-pswp-height="600"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-right-overlay"></div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div
+          class="container service-content service-text"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+        >
+          <h2>SERVICES</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet
+            eligendi expedita fugit voluptatibus dolore, eum, repudiandae
+            ratione quos soluta quibusdam? Dolorem, aspernatur magnam ipsum nisi
+            numquam maxime doloremque culpa.
+          </p>
+          <div class="type-services">
+            <div class="service-box ml-lg-0">
+              <img src="images/icons/tattoo-w.png" alt="" />
+              <h3 class="h3-hover">TATTOO</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <div class="service-box-button-bottom"></div>
+              <div class="service-box-button-top"></div>
+            </div>
+
+            <div class="service-box">
+              <img src="images/icons/piercings-w.png" alt="" />
+              <h3 class="h3-hover">PIERCING</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <div class="service-box-button-bottom"></div>
+              <div class="service-box-button-top"></div>
+            </div>
+
+            <div class="service-box mr-lg-0">
+              <img src="images/icons/laser-w.png" alt="" />
+              <h3 class="h3-hover">REMOVAL</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <div class="service-box-button-bottom"></div>
+              <div class="service-box-button-top"></div>
+            </div>
+
+            <div class="service-box ml-lg-0">
+              <img src="images/icons/ink-w.png" alt="" />
+              <h3 class="h3-hover">SUPPLIES</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <div class="service-box-button-bottom"></div>
+              <div class="service-box-button-top"></div>
+            </div>
+
+            <div class="service-box">
+              <img src="images/icons/cream-w.png" alt="" />
+              <h3 class="h3-hover">AFTERCARE</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <div class="service-box-button-bottom"></div>
+              <div class="service-box-button-top"></div>
+            </div>
+
+            <div class="service-box mr-lg-0">
+              <img src="images/icons/tshirt-w.png" alt="" />
+              <h3 class="h3-hover">T-SHIRTS</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <div class="service-box-button-bottom"></div>
+              <div class="service-box-button-top"></div>
+            </div>
+          </div>
+          <div class="divider">
+            <img src="images/icons/tattoo-g.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="container app-section team-content">
+          <img
+            src="images/logo-section-team-2.png"
+            alt=""
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          />
+          <h2>TATTOO ARTISTS</h2>
+
+          <div class="tattoo-artist-container">
+            <div class="artist-box portfolio-01">
+              <img src="images/tattoist/01.jpg" alt="" />
+              <p>Realism / Portrait Tattoist</p>
+              <h3>Cleyton Cassino</h3>
+              <a
+                href="images/01.jpg"
+                class="button-portfolio"
+                id="button-portfolio"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+                >Portfolio</a
+              >
+              <a
+                href="images/02.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+              <a
+                href="images/05.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+              <a
+                href="images/03.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+            </div>
+
+            <div class="artist-box portfolio-02">
+              <img src="images/tattoist/01.jpg" alt="" />
+              <p>Realism / Portrait Tattoist</p>
+              <h3>Cleyton Cassino</h3>
+              <a
+                href="images/01.jpg"
+                class="button-portfolio"
+                id="button-portfolio"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+                >Portfolio</a
+              >
+              <a
+                href="images/02.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+              <a
+                href="images/05.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+              <a
+                href="images/04a.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+            </div>
+
+            <div class="artist-box portfolio-03">
+              <img src="images/tattoist/01.jpg" alt="" />
+              <p>Realism / Portrait Tattoist</p>
+              <h3>Cleyton Cassino</h3>
+              <a
+                href="images/01.jpg"
+                class="button-portfolio"
+                id="button-portfolio"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+                >Portfolio</a
+              >
+              <a
+                href="images/02.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+              <a
+                href="images/05.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+              <a
+                href="images/06a.jpg"
+                data-pswp-width="1200"
+                data-pswp-height="600"
+              ></a>
+            </div>
+            <div class="divider">
+              <img src="images/icons/tattoo-g.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container app-section faq-content">
+          <h2 data-aos="zoom-in-up">FAQ</h2>
+          <button class="accordion">
+            How much does a tattoo cost? <a>+</a>
+          </button>
+          <div class="panel">
+            <p>
+              Tattoo prices vary based on factors such as size, complexity, and
+              the artist's expertise. Small, simple tattoos typically have a
+              lower cost, while larger, intricate designs may be more expensive.
+              It's best to schedule a consultation with one of our artists to
+              get an accurate quote for your specific tattoo idea.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Do I need to make an appointment, or can I walk in for a tattoo?<a
+              >+</a
+            >
+          </button>
+          <div class="panel">
+            <p>
+              Answer: Both options are available! While appointments are
+              recommended, we also welcome walk-ins whenever our artists have
+              availability. To ensure you get the design and time slot you
+              prefer, we advise scheduling an appointment in advance.
+            </p>
+          </div>
+
+          <button class="accordion">
+            How should I prepare for my tattoo appointment?<a>+</a>
+          </button>
+          <div class="panel">
+            <p>
+              To ensure a smooth tattoo experience, it's essential to be
+              well-rested, hydrated, and have a good meal before your
+              appointment. Avoid alcohol and excessive caffeine on the day of
+              your tattoo. Wear comfortable clothing that allows easy access to
+              the area being tattooed, and bring any reference materials or
+              ideas you may have.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Is the tattooing process painful?<a>+</a>
+          </button>
+          <div class="panel">
+            <p>
+              Pain tolerance varies from person to person, and everyone
+              experiences tattooing differently. While some discomfort is
+              normal, many clients find the pain to be manageable and well worth
+              the final result. Our skilled artists work efficiently to minimize
+              any discomfort, and they can provide tips for making the
+              experience more comfortable.
+            </p>
+          </div>
+
+          <button class="accordion">
+            How long does it take for a tattoo to heal, and what is the
+            aftercare process?<a>+</a>
+          </button>
+          <div class="panel">
+            <p>
+              Healing times vary based on the size and complexity of the tattoo.
+              On average, it takes about 2-4 weeks for a tattoo to fully heal.
+              During this time, it's crucial to follow the aftercare
+              instructions provided by your artist, including keeping the tattoo
+              clean, avoiding sun exposure, and refraining from scratching or
+              picking at the healing skin. If you have any concerns during the
+              healing process, don't hesitate to contact the studio for
+              guidance.
+            </p>
+          </div>
+
+          <div class="divider">
+            <img src="images/icons/tattoo-g.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="book" id="book">
+        <div class="book-background"></div>
+        <div class="container book-content" data-aos="zoom-in-right">
+          <form
+            action="http://localhost:8080/"
+            method="post"
+            id="form-email"
+            enctype="multipart/form-data"
+          >
+            <div class="form-flex">
+              <h2>book now</h2>
+              <div class="form-control first-name">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="input-name" />
+              </div>
+              <div class="form-control email">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-email"
+                />
+              </div>
+              <div class="form-control phone">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" class="input-phone" />
+              </div>
+              <div class="form-control address">
+                <label for="">Address</label>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  class="input-address"
+                />
+              </div>
+              <div class="form-control reference">
+                <label for="">Upload your references here.</label>
+                <input type="file" id="file" name="filename" multiple />
+              </div>
+              <div class="form-control message">
+                <label for="">Leave us a message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <button
+                type="submit"
+                form="form-email"
+                value="Submit"
+                class="button-book button-msg"
+                id="submit-button"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <div id="loader"></div>
+          <div class="divider">
+            <img src="images/icons/tattoo-g.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <h3 class="h3-footer">Address</h3>
+            <p>24, Westwood Road</p>
+            <p>Coventry - UK</p>
+            <p>Phone: +44 01214488120</p>
+            <p>WhatsApp: +44 07707484672</p>
+          </div>
+
+          <div class="footer-middle">
+            <img
+              src="images/logo-section-team-2.png"
+              alt=""
+              class="logo-middle"
+            />
+            <div class="footer-middle-buttons">
+              <img
+                src="images/icons/facebook.png"
+                alt=""
+                class="social-buttons"
+              />
+              <img
+                src="images/icons/instagram.png"
+                alt=""
+                class="social-buttons"
+              />
+              <img
+                src="images/icons/envelope.png"
+                alt=""
+                class="social-buttons"
+              />
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <h3 class="h3-footer">Open hours</h3>
+            <p>Monday - Saturday</p>
+            <p><u>10AM to 6PM</u></p>
+            <p>Sunday</p>
+            <p><u>Closed</u></p>
+          </div>
+        </div>
+      </section>
+      <div class="footer-end">
+        <div class="container">
+          <p>© 2024 All Rights Reserved - Luis Fernandes Jr</p>
+        </div>
+      </div>
     </main>
 
-
-
-    <footer>
-
-
-    </footer>
-
-
-
+    <footer></footer>
 
     <script src="scripts/photoswipe/photoswipe-lightbox.umd.min.js"></script>
     <script src="scripts/photoswipe/photoswipe.umd.min.js"></script>
     <script src="scripts/script.js"></script>
-
-
-</body>
-
+  </body>
 </html>
