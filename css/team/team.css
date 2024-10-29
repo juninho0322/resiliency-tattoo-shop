@@ -1,79 +1,70 @@
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background: black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: black;
 }
-
 
 .team-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-.team-content>img {
-    max-width: 40%;
-    margin: 3em auto 0;
+.team-content > img {
+  max-width: 40%;
+  margin: 3em auto 0;
 }
 
-.team-content>h2 {
-    padding-top: 1em;
+.team-content > h2 {
+  padding-top: 1em;
 }
 
 .tattoo-artist-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1280px;
-    margin: 0 auto;
-
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .artist-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(33.33% - 2em);
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    border: 1px solid var(--secondary-a);
-    border-bottom: none;
-
-
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(33.33% - 2em);
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid var(--secondary-a);
+  border-bottom: none;
+  margin-top: 2em !important;
 }
 
-.artist-box>img {
-    width: 100%;
+.artist-box > img {
+  width: 100%;
 }
 
-.artist-box>p {
-    padding: 0.8em;
+.artist-box > p {
+  padding: 0.8em;
 }
 
-.artist-box>h3 {
-    font-size: 1.5em;
-    color: var(--secondary-a);
-
+.artist-box > h3 {
+  font-size: 1.5em;
+  color: var(--secondary-a);
 }
 
 .button-portfolio {
-    display: flex;
-    /* border: 0.1em solid; */
-    color: var(--primary-b);
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.3rem !important;
-    font-family: RodfatTwo;
-    width: 100%;
-    min-height: 3em;
-    background-color: var(--secondary-a);
-
+  display: flex;
+  /* border: 0.1em solid; */
+  color: var(--primary-b);
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.3rem !important;
+  font-family: RodfatTwo;
+  width: 100%;
+  min-height: 3em;
+  background-color: var(--secondary-a);
 }

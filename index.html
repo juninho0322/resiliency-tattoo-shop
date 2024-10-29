@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/book/book-responsive.css" />
     <link rel="stylesheet" href="css/footer/footer.css" />
     <link rel="stylesheet" href="css/footer/footer-responsive.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -126,10 +127,14 @@
             <div class="about-text">
               <h2 class="h2-about">ABOUT OUR STUDIO</h2>
               <p class="p-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                velit nostrum modi quo numquam sunt aut dolorum quia asperiores!
-                Eos aperiam laborum omnis quod voluptatem autem, totam nam
-                dignissimos corporis.
+                Ready to express yourself in a bold new way? At our tattoo and
+                piercing studio, we transform your ideas into stunning body art
+                that tells your unique story! Our talented artists are dedicated
+                to providing a safe, clean, and welcoming environment where your
+                vision comes to life. Whether you're looking for intricate
+                tattoos or stylish piercings, we ve got you covered. Don t wait
+                any longer book your appointment today and let s create
+                something unforgettable together!.
               </p>
             </div>
             <div class="about-responsive-background">
@@ -177,16 +182,19 @@
         >
           <h2>SERVICES</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet
-            eligendi expedita fugit voluptatibus dolore, eum, repudiandae
-            ratione quos soluta quibusdam? Dolorem, aspernatur magnam ipsum nisi
-            numquam maxime doloremque culpa.
+            Turn your body into a canvas at our premier tattoo shop! Whether
+            you're looking for intricate designs, vibrant colors, or the perfect
+            piercing, our skilled artists are here to bring your vision to life.
+            Plus, we offer top-of-the-line maintenance products to ensure your
+            new ink stays stunning. Don't forget to check out our range of
+            tattoo supplies for the aspiring artist in you! Visit us today and
+            let's create something unforgettable together!.
           </p>
           <div class="type-services">
             <div class="service-box ml-lg-0">
               <img src="images/icons/tattoo-w.png" alt="" />
               <h3 class="h3-hover">TATTOO</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <p>...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
@@ -194,7 +202,7 @@
             <div class="service-box">
               <img src="images/icons/piercings-w.png" alt="" />
               <h3 class="h3-hover">PIERCING</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <p>...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
@@ -202,7 +210,7 @@
             <div class="service-box mr-lg-0">
               <img src="images/icons/laser-w.png" alt="" />
               <h3 class="h3-hover">REMOVAL</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <p>...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
@@ -210,7 +218,7 @@
             <div class="service-box ml-lg-0">
               <img src="images/icons/ink-w.png" alt="" />
               <h3 class="h3-hover">SUPPLIES</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <p>...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
@@ -218,15 +226,30 @@
             <div class="service-box">
               <img src="images/icons/cream-w.png" alt="" />
               <h3 class="h3-hover">AFTERCARE</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <p class="">...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
 
-            <div class="service-box mr-lg-0">
+            <div class="modal-sections hidden modal-tshirt">
+              <button class="close-modal">&times;</button>
+              <h1>I'm a modal window 😍</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="overlay hidden"></div>
+
+            <div class="service-box mr-lg-0 show-modal">
               <img src="images/icons/tshirt-w.png" alt="" />
               <h3 class="h3-hover">T-SHIRTS</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              <p class="show-modal">...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
@@ -250,89 +273,118 @@
 
           <div class="tattoo-artist-container">
             <div class="artist-box portfolio-01">
-              <img src="images/tattoist/01.jpg" alt="" />
+              <img
+                src="images/tattoist/cleyton.jpeg"
+                alt=""
+                width="400"
+                height="450"
+              />
               <p>Realism / Portrait Tattoist</p>
               <h3>Cleyton Cassino</h3>
               <a
-                href="images/01.jpg"
+                href="images/tattoist/cleyton-tatoos/01.jpg"
                 class="button-portfolio"
                 id="button-portfolio"
-                data-pswp-width="1200"
-                data-pswp-height="600"
+                data-pswp-width="672"
+                data-pswp-height="896"
                 >Portfolio</a
               >
               <a
-                href="images/02.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
+                href="images/tattoist/cleyton-tatoos/04.jpg"
+                data-pswp-width="600"
+                data-pswp-height="743"
               ></a>
               <a
-                href="images/05.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
+                href="images/tattoist/cleyton-tatoos/05.JPG"
+                data-pswp-width="600"
+                data-pswp-height="740"
               ></a>
               <a
-                href="images/03.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
-              ></a>
-            </div>
-
-            <div class="artist-box portfolio-02">
-              <img src="images/tattoist/01.jpg" alt="" />
-              <p>Realism / Portrait Tattoist</p>
-              <h3>Cleyton Cassino</h3>
-              <a
-                href="images/01.jpg"
-                class="button-portfolio"
-                id="button-portfolio"
-                data-pswp-width="1200"
-                data-pswp-height="600"
-                >Portfolio</a
-              >
-              <a
-                href="images/02.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
+                href="images/tattoist/cleyton-tatoos/06.JPG"
+                data-pswp-width="600"
+                data-pswp-height="685"
               ></a>
               <a
-                href="images/05.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
-              ></a>
-              <a
-                href="images/04a.jpg"
-                data-pswp-width="1200"
+                href="images/tattoist/cleyton-tatoos/09.JPG"
+                data-pswp-width="600"
                 data-pswp-height="600"
               ></a>
             </div>
 
             <div class="artist-box portfolio-03">
-              <img src="images/tattoist/01.jpg" alt="" />
-              <p>Realism / Portrait Tattoist</p>
-              <h3>Cleyton Cassino</h3>
+              <img
+                src="images/tattoist/dri.jpeg"
+                alt=""
+                width="400"
+                height="450"
+              />
+              <p>Apprentice and Piecer</p>
+              <h3>Adriele Lima</h3>
               <a
-                href="images/01.jpg"
+                href="images/tattoist/Adriele/14.jpeg"
                 class="button-portfolio"
                 id="button-portfolio"
-                data-pswp-width="1200"
-                data-pswp-height="600"
+                data-pswp-width="600"
+                data-pswp-height="998"
                 >Portfolio</a
               >
               <a
-                href="images/02.jpg"
-                data-pswp-width="1200"
+                href="images/tattoist/Adriele/05.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="800"
+              ></a>
+              <a
+                href="images/tattoist/Adriele/06.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="800"
+              ></a>
+              <a
+                href="images/tattoist/Adriele/07.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="800"
+              ></a>
+              <a
+                href="images/tattoist/Adriele/08.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="800"
+              ></a>
+            </div>
+            <div class="artist-box portfolio-04">
+              <img
+                src="images/tattoist/Nikita Nomad/profile.jpeg"
+                alt=""
+                width="400"
+                height="450"
+              />
+              <p>Realism / Portrait Tattoist</p>
+              <h3>Nikita Nomad</h3>
+              <a
+                href="images/tattoist/Nikita Nomad/05.jpeg"
+                class="button-portfolio"
+                id="button-portfolio"
+                data-pswp-width="600"
+                data-pswp-height="750"
+                >Portfolio</a
+              >
+              <a
+                href="images/tattoist/Nikita Nomad/01.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="750"
+              ></a>
+              <a
+                href="images/tattoist/Nikita Nomad/02.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="750"
+              ></a>
+              <a
+                href="images/tattoist/Nikita Nomad/03.jpeg"
+                data-pswp-width="600"
                 data-pswp-height="600"
               ></a>
               <a
-                href="images/05.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
-              ></a>
-              <a
-                href="images/06a.jpg"
-                data-pswp-width="1200"
-                data-pswp-height="600"
+                href="images/tattoist/Nikita Nomad/04.jpeg"
+                data-pswp-width="600"
+                data-pswp-height="750"
               ></a>
             </div>
             <div class="divider">
@@ -365,10 +417,10 @@
           </button>
           <div class="panel">
             <p>
-              Answer: Both options are available! While appointments are
-              recommended, we also welcome walk-ins whenever our artists have
-              availability. To ensure you get the design and time slot you
-              prefer, we advise scheduling an appointment in advance.
+              Both options are available! While appointments are recommended, we
+              also welcome walk-ins whenever our artists have availability. To
+              ensure you get the design and time slot you prefer, we advise
+              scheduling an appointment in advance.
             </p>
           </div>
 
@@ -414,6 +466,36 @@
               picking at the healing skin. If you have any concerns during the
               healing process, don't hesitate to contact the studio for
               guidance.
+            </p>
+          </div>
+          <button class="accordion">
+            Deposit and Cancellation Policy<a>+</a>
+          </button>
+          <div class="panel">
+            <p>
+              A non-refundable deposit is required to secure your appointment.
+              This deposit will be deducted from the total cost of your tattoo
+              on the day of your appointment. Cancellations and Rescheduling:
+              <br />* Rescheduling: You may reschedule your appointment up to 3
+              days prior to your scheduled appointment time. <br />*
+              Cancellations: If you need to cancel your appointment within 3
+              days of your scheduled appointment time, your deposit will be
+              forfeited. Reasons for this Policy: <br />* Artist Time: Your
+              artist allocates specific time for your tattoo. Cancellations with
+              short notice make it difficult to fill that slot. <br />*
+              Preparation: Your artist may begin preparing designs and materials
+              for your tattoo in advance. <br />* Demand: Tattoo studios often
+              have a waiting list, and your deposit ensures that the appointment
+              is filled. Please note: * If you fail to show up for your
+              appointment without prior notice, your deposit will be forfeited
+              and you may be required to pay an additional fee for future
+              bookings. <br />* While we understand that unforeseen
+              circumstances may arise, we appreciate your understanding of this
+              policy. Resiliency Tattoo Studio reserves the right to amend this
+              policy at any time. Resiliency Tattoo Studio is committed to
+              providing you with the best possible tattoo experience. If you
+              have any questions or concerns, please do not hesitate to contact
+              us.
             </p>
           </div>
 
@@ -479,6 +561,14 @@
               </button>
             </div>
           </form>
+
+          <div id="successModal" style="display: none">
+            <div>
+              <p id="modalMessage"></p>
+              <button id="modalCloseButton">Close</button>
+            </div>
+          </div>
+
           <div id="loader"></div>
           <div class="divider">
             <img src="images/icons/tattoo-g.png" alt="" />
@@ -490,10 +580,10 @@
         <div class="footer-container">
           <div class="footer-left">
             <h3 class="h3-footer">Address</h3>
-            <p>24, Westwood Road</p>
-            <p>Coventry - UK</p>
-            <p>Phone: +44 01214488120</p>
-            <p>WhatsApp: +44 07707484672</p>
+            <p>17, Piccadilly Arcade</p>
+            <p>Birgmingham - UK</p>
+            <p>Phone: +44 7707484672</p>
+            <p class="footer-email">Email: info@resiliencytattoo.co.uk</p>
           </div>
 
           <div class="footer-middle">
@@ -507,16 +597,33 @@
                 src="images/icons/facebook.png"
                 alt=""
                 class="social-buttons"
+                onclick="redirectToPage('https://www.facebook.com/profile.php?id=61564868435680')"
+                onmouseover="hoverEffect(this)"
+                onmouseout="removeHoverEffect(this)"
               />
               <img
                 src="images/icons/instagram.png"
                 alt=""
                 class="social-buttons"
+                onclick="redirectToPage('https://www.instagram.com/resiliencytattoo/')"
+                onmouseover="hoverEffect(this)"
+                onmouseout="removeHoverEffect(this)"
+              />
+              <img
+                src="images/icons/platform.png"
+                alt=""
+                class="social-buttons"
+                onclick="redirectToPage('https://www.tiktok.com/@resiliencytattoo')"
+                onmouseover="hoverEffect(this)"
+                onmouseout="removeHoverEffect(this)"
               />
               <img
                 src="images/icons/envelope.png"
                 alt=""
                 class="social-buttons"
+                onmouseover="hoverEffect(this)"
+                onmouseout="removeHoverEffect(this)"
+                onclick="openEmail()"
               />
             </div>
           </div>
@@ -532,7 +639,15 @@
       </section>
       <div class="footer-end">
         <div class="container">
-          <p>© 2024 All Rights Reserved - Luis Fernandes Jr</p>
+          <p>
+            © 2024 All Rights Reserved -
+            <a
+              class="footer-luis"
+              href="https://www.linkedin.com/in/luis-carlos-fernandes-19660bb6/"
+            >
+              Luis C F Jr
+            </a>
+          </p>
         </div>
       </div>
     </main>
@@ -542,5 +657,6 @@
     <script src="scripts/photoswipe/photoswipe-lightbox.umd.min.js"></script>
     <script src="scripts/photoswipe/photoswipe.umd.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/modal.js"></script>
   </body>
 </html>
