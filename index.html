@@ -37,6 +37,27 @@
     />
     <link rel="stylesheet" href="css/normalize/normalize.css" />
     <link rel="stylesheet" href="css/photoswipe/photoswipe.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16740793810"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16740793810");
+    </script>
+
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-16740793810/Wx-YCNOX0uUZENL70K4-",
+      });
+    </script>
   </head>
 
   <body>
@@ -277,7 +298,7 @@
                 src="images/tattoist/cleyton.jpeg"
                 alt=""
                 width="400"
-                height="450"
+                height="300"
               />
               <p>Realism / Portrait Tattoist</p>
               <h3>Cleyton Cassino</h3>
@@ -316,7 +337,7 @@
                 src="images/tattoist/dri.jpeg"
                 alt=""
                 width="400"
-                height="450"
+                height="300"
               />
               <p>Apprentice and Piecer</p>
               <h3>Adriele Lima</h3>
@@ -354,7 +375,7 @@
                 src="images/tattoist/Nikita Nomad/profile.jpeg"
                 alt=""
                 width="400"
-                height="450"
+                height="300"
               />
               <p>Realism / Portrait Tattoist</p>
               <h3>Nikita Nomad</h3>
@@ -509,7 +530,7 @@
         <div class="book-background"></div>
         <div class="container book-content" data-aos="zoom-in-right">
           <form
-            action="http://localhost:8080/"
+            action="http://localhost:8080"
             method="post"
             id="form-email"
             enctype="multipart/form-data"

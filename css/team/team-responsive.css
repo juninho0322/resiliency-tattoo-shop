@@ -1,54 +1,71 @@
 @media (max-width: 1100px) {
-    .team-content>img {
-        max-width: 60%;
-        height: auto;
-        margin: 0.8em auto 0;
-
-
-    }
+  .team-content > img {
+    max-width: 60%;
+    height: auto;
+    margin: 0.8em auto 0;
+  }
 }
-
 
 @media (max-width: 1100px) {
-    .artist-box {
-        width: 40%;
-        margin-top: 5em;
-        text-align: center;
-
-    }
+  .artist-box {
+    width: 40%;
+    margin-top: 5em;
+    text-align: center;
+  }
 }
 
-
 @media (max-width: 750px) {
-    .team-content>h2 {
-        font-size: 3.5em;
-        text-align: center;
-    }
+  .team-content > h2 {
+    font-size: 3.5em;
+    text-align: center;
+  }
 
-    .artist-box {
-        width: 60%;
-        margin-top: 5em;
+  .artist-box {
+    width: 60%;
+    margin-top: 5em;
+  }
+}
 
-    }
+@media (max-width: 850px) {
+  .team-content > h2 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .artist-box {
+    width: 60%;
+    margin-top: 5em;
+  }
 }
 
 @media (max-width: 580px) {
-    .team-content>h2 {
-        text-align: center;
+  .team-content > h2 {
+    text-align: center;
+  }
+  .artist-box > p {
+    font-size: 15px;
+  }
 
-    }
+  .artist-box > h2 {
+    font-size: 15px;
+  }
+  .team-content > img {
+    max-width: 70%;
+    height: auto;
+    margin: 0.8em auto 0;
+  }
 
-    .team-content>img {
-        max-width: 70%;
-        height: auto;
-        margin: 0.8em auto 0;
+  .artist-box {
+    width: 80%;
+    margin-top: 5em;
+  }
+}
 
-
-    }
-
-    .artist-box {
-        width: 80%;
-        margin-top: 5em;
-
-    }
+@media (max-width: 420px) {
+  .team-content > h2 {
+    text-align: center;
+  }
+  .artist-box > h3 {
+    font-size: 15px;
+  }
 }

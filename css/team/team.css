@@ -32,7 +32,7 @@
   display: flex;
   flex-wrap: wrap;
   width: calc(33.33% - 2em);
-  height: auto;
+  height: 29.2rem;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -46,7 +46,7 @@
 }
 
 .artist-box > p {
-  padding: 0.8em;
+  padding: 0.5em;
 }
 
 .artist-box > h3 {
@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   font-family: RodfatTwo;
   width: 100%;
   min-height: 3em;
