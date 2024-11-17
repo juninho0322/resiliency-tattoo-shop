@@ -254,7 +254,7 @@
 
             <div class="modal-sections hidden modal-tshirt">
               <button class="close-modal">&times;</button>
-              <h1>I'm a modal window 😍</h1>
+              <h1>T-SHIRTS 😍</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -339,7 +339,7 @@
                 width="400"
                 height="300"
               />
-              <p>Apprentice and Piecer</p>
+              <p>Apprentice and Piercer</p>
               <h3>Adriele Lima</h3>
               <a
                 href="images/tattoist/Adriele/14.jpeg"
@@ -539,7 +539,15 @@
               <h2>book now</h2>
               <div class="form-control first-name">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="input-name" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input-name"
+                  required
+                  oninvalid="this.setCustomValidity('Name is required. Please provide your name.')"
+                  oninput="this.setCustomValidity('')"
+                />
               </div>
               <div class="form-control email">
                 <label for="email">Email</label>
@@ -548,6 +556,7 @@
                   name="email"
                   id="email"
                   class="input-email"
+                  required
                 />
               </div>
               <div class="form-control phone">
@@ -564,12 +573,12 @@
                 />
               </div>
               <div class="form-control reference">
-                <label for="">Upload your references here.</label>
+                <label for="filename">Upload your references here.</label>
                 <input type="file" id="file" name="filename" multiple />
               </div>
               <div class="form-control message">
                 <label for="">Leave us a message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" required></textarea>
               </div>
               <button
                 type="submit"
@@ -582,13 +591,13 @@
               </button>
             </div>
           </form>
-
+          <!-- 
           <div id="successModal" style="display: none">
             <div>
               <p id="modalMessage"></p>
               <button id="modalCloseButton">Close</button>
             </div>
-          </div>
+          </div> -->
 
           <div id="loader"></div>
           <div class="divider">

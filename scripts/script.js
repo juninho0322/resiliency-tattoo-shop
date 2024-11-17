@@ -1,14 +1,18 @@
 // alert(`testing`);
 
-document
-  .getElementById("form-email")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    document.getElementById("submit-button").disabled = true; // Disable the submit button
+/*
+  this need to be actived when the email server works
+*/
 
-    // Optionally, add your own form submission logic if needed:
-    this.submit(); // Only submit once
-  });
+// document
+//   .getElementById("form-email")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent the default form submission behavior
+//     document.getElementById("submit-button").disabled = true; // Disable the submit button
+
+//     // Optionally, add your own form submission logic if needed:
+//     this.submit(); // Only submit once
+//   });
 
 var lightbox = new PhotoSwipeLightbox({
   gallery: ".studio-gallery",
@@ -136,6 +140,18 @@ function openEmail() {
   // Open the mailto link
   window.location.href = mailtoLink;
 }
+/* temp alert box till email serve get worked
+ */
+// document.addEventListener("DOMContentLoaded", function () {
+//   document
+//     .getElementById("submit-button")
+//     .addEventListener("click", function (event) {
+//       event.preventDefault();
+//       alert(
+//         "Sorry this form is in progress... send an email to:.info@resiliencytattoo.co.uk "
+//       );
+//     });
+// });
 
 // email form js
 document.addEventListener("DOMContentLoaded", () => {
@@ -157,18 +173,22 @@ document.addEventListener("DOMContentLoaded", () => {
           body: formData,
         });
 
+        if (!response.ok) {
+          // If the response is not OK (e.g., 400 or 500 status code)
+          const errorResult = await response.json();
+          console.log(errorResult);
+          alert("Error sending email: " + errorResult.error);
+          return;
+        }
+
         // Parse the JSON response from the server
         const result = await response.json();
 
-        // If the email was sent successfully, show the success modal
-        if (result.status === "success") {
-          showSuccessModal(result.message);
-        } else {
-          // Handle errors if email wasn't sent successfully
-          alert("Error sending email: " + result.message);
-        }
+        // Show a success message
+        alert(result.message);
       } catch (error) {
         console.error("Error:", error);
+
         alert("An unexpected error occurred.");
       } finally {
         // Re-enable the submit button
@@ -176,22 +196,3 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
-
-// Function to display the success modal
-// function showSuccessModal(message) {
-//   const modal = document.getElementById("successModal");
-//   const modalMessage = document.getElementById("modalMessage");
-//   modalMessage.textContent = message;
-//   modal.style.display = "block";
-// }
-
-// // Function to close the modal when the close button is clicked
-// function closeModal() {
-//   const modal = document.getElementById("successModal");
-//   modal.style.display = "none";
-// }
-
-// Ensure that closeModal function is called when a close button is clicked
-// document
-//   .querySelector("#modalCloseButton")
-//   ?.addEventListener("click", closeModal);
