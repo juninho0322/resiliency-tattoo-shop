@@ -163,15 +163,17 @@ document.addEventListener("DOMContentLoaded", () => {
       // Disable the submit button
       document.getElementById("submit-button").disabled = true;
 
+      console.log(event.target);
       // Collect the form data
       const formData = new FormData(event.target);
-
+      console.log(formData);
       try {
         // Send the form data via fetch to the server
-        const response = await fetch("http://localhost:8080/contact", {
+        const response = await fetch("http://153.92.208.179:8080/contact", {
           method: "POST",
           body: formData,
         });
+        console.log(response);
 
         if (!response.ok) {
           // If the response is not OK (e.g., 400 or 500 status code)
@@ -181,18 +183,20 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        // Parse the JSON response from the server
-        const result = await response.json();
-
         // Show a success message
-        alert(result.message);
+        alert("Email sent sucessfully.");
       } catch (error) {
         console.error("Error:", error);
 
-        alert("An unexpected error occurred.");
+        alert("Error");
       } finally {
         // Re-enable the submit button
         document.getElementById("submit-button").disabled = false;
+        document.getElementById("form-email").reset();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }
     });
 });

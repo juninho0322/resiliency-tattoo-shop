@@ -9,11 +9,287 @@
   </head>
   <body>
     <div
-      class="bg-black w-full h-20 text-white flex justify-center items-center"
+      class="bg-black w-full h-30 text-white flex justify-evenly items-center"
     >
-      <p class="text-3xl">Tattoo Consent Form</p>
+      <p class="text-2xl">Tattoo Consent Form</p>
+      <img src="/images/logo-menu.png" alt="" width="100" height="100" />
     </div>
-    <form class="m-10 space-y-6">
+
+    <div class="w-full h-30 p-5 justify-center items-center">
+      <p class="text-2xl text-red-600 pb-5 text-center">IMPORTANT NOTICE</p>
+      <p>
+        Please carefully review and complete this consent form before proceeding
+        with your tattoo. By signing, you acknowledge the risks associated with
+        tattooing and agree to release Resiliency Tattoo Studio and its
+        employees from any liability related to the tattoo procedure.
+      </p>
+    </div>
+    <div class="p-1 text-2xl border-b-4 border-lime-500 m-5">
+      <p>Personal Details</p>
+    </div>
+    <form class="m-5 space-y-6">
+      <!-- Name -->
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-bold mb-2"
+          >Full Name *</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="mb-4">
+        <label for="dob" class="block text-gray-700 font-bold mb-2"
+          >Date of Birth *</label
+        >
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Phone -->
+      <div class="mb-4">
+        <label for="phone" class="block text-gray-700 font-bold mb-2"
+          >Phone</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(123) 456-7890"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold mb-2"
+          >Email</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="john.doe@example.com"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+        />
+      </div>
+
+      <!-- City/State -->
+      <div class="mb-4">
+        <label for="city-state" class="block text-gray-700 font-bold mb-2"
+          >City/State *</label
+        >
+        <input
+          type="text"
+          id="city-state"
+          name="city-state"
+          placeholder="City, State"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Upload ID Photo -->
+      <div class="mb-4">
+        <label for="id-photo" class="block text-gray-700 font-bold mb-2"
+          >Upload a photo of your ID *</label
+        >
+        <input
+          type="file"
+          id="id-photo"
+          name="id-photo"
+          accept="image/*"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
+        />
+      </div>
+
+      <div class="p-1 border-b-4 border-lime-500 w">
+        <p class="text-2xl">Medical History</p>
+      </div>
+      <p>
+        Please disclose any medical conditions that could affect the tattoo
+        procedure. Accurate information is essential to ensure your safety.
+      </p>
+      <!-- QUESTION 1 -->
+      <div class="flex items-center medical-questions">
+        <p>
+          1. Do you have any allergies (especially to dyes, latex, or metals)?
+        </p>
+        <p class="px-3"></p>
+        <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+        <label class="relative flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer toggle-checkbox"
+            data-target="allergy-input-container"
+          />
+          <div
+            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
+          ></div>
+        </label>
+        <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
+      </div>
+      <!-- Hidden input field for Question 1 -->
+      <div id="allergy-input-container" class="hidden mt-4">
+        <label
+          for="allergy-input"
+          class="block text-sm font-medium text-gray-700"
+        >
+          Please specify your allergies:
+        </label>
+        <input
+          type="text"
+          id="allergy-input"
+          placeholder="Type here..."
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
+      <!-- QUESTION 2 -->
+      <div class="flex items-center medical-questions">
+        <p>
+          2. Are you currently taking any medications (e.g., blood thinners)?
+        </p>
+        <p class="px-3"></p>
+        <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+        <label class="relative flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer toggle-checkbox"
+            data-target="medications-input-container"
+          />
+          <div
+            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
+          ></div>
+        </label>
+        <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
+      </div>
+      <!-- Hidden input field for Question 2 -->
+      <div id="medications-input-container" class="hidden mt-4">
+        <label
+          for="medications-input"
+          class="block text-sm font-medium text-gray-700"
+        >
+          Please specify the medications:
+        </label>
+        <input
+          type="text"
+          id="allergy-input"
+          placeholder="Type here..."
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
+
+      <!-- QUESTION 3 -->
+      <div class="flex items-center medical-questions">
+        <p>
+          3. Do you have any medical conditions (e.g., diabetes, heart
+          conditions, epilepsy) that may impact the tattooing process?
+        </p>
+        <p class="px-3"></p>
+        <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+        <label class="relative flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer toggle-checkbox"
+            data-target="medical-input-container"
+          />
+          <div
+            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
+          ></div>
+        </label>
+        <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
+      </div>
+      <!-- Hidden input field for Question 3 -->
+      <div id="medical-input-container" class="hidden mt-4">
+        <label
+          for="medical-input"
+          class="block text-sm font-medium text-gray-700"
+        >
+          Please specify the medical conditions:
+        </label>
+        <input
+          type="text"
+          id="allergy-input"
+          placeholder="Type here..."
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
+
+      <!-- QUESTION 4 -->
+      <div class="flex items-center medical-questions">
+        <p>
+          4. Do you have any history of skin conditions or issues with
+          scarring/keloids?
+        </p>
+        <p class="px-3"></p>
+        <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+        <label class="relative flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer toggle-checkbox"
+            data-target="keloids-input-container"
+          />
+          <div
+            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
+          ></div>
+        </label>
+        <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
+      </div>
+      <!-- Hidden input field for Question 4 -->
+      <div id="keloids-input-container" class="hidden mt-4">
+        <label
+          for="keloids-input"
+          class="block text-sm font-medium text-gray-700"
+        >
+          Please specify any history of skin conditions:
+        </label>
+        <input
+          type="text"
+          id="keloids-input"
+          placeholder="Type here..."
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
+
+      <!-- QUESTION 5 -->
+      <div class="flex items-center medical-questions">
+        <p>5. Are you pregnant or breastfeeding?</p>
+        <p class="px-3"></p>
+        <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+        <label class="relative flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer toggle-checkbox"
+          />
+          <div
+            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
+          ></div>
+        </label>
+        <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
+      </div>
+
+      <div class="p-1 border-b-4 border-lime-500 w">
+        <p class="text-2xl">
+          Consent to tattoo procedure and release of liability
+        </p>
+      </div>
       <!-- Checkbox 1 -->
       <div class="flex items-center gap-4">
         <input
@@ -148,93 +424,6 @@
         >
       </div>
 
-      <!-- Name -->
-      <div class="mb-4">
-        <label for="name" class="block text-gray-700 font-bold mb-2"
-          >Full Name *</label
-        >
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="John Doe"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-          required
-        />
-      </div>
-
-      <!-- Date of Birth -->
-      <div class="mb-4">
-        <label for="dob" class="block text-gray-700 font-bold mb-2"
-          >Date of Birth *</label
-        >
-        <input
-          type="date"
-          id="dob"
-          name="dob"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-          required
-        />
-      </div>
-
-      <!-- Phone -->
-      <div class="mb-4">
-        <label for="phone" class="block text-gray-700 font-bold mb-2"
-          >Phone</label
-        >
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="(123) 456-7890"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-        />
-      </div>
-
-      <!-- Email -->
-      <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-bold mb-2"
-          >Email</label
-        >
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="john.doe@example.com"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-        />
-      </div>
-
-      <!-- City/State -->
-      <div class="mb-4">
-        <label for="city-state" class="block text-gray-700 font-bold mb-2"
-          >City/State *</label
-        >
-        <input
-          type="text"
-          id="city-state"
-          name="city-state"
-          placeholder="City, State"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-          required
-        />
-      </div>
-
-      <!-- Upload ID Photo -->
-      <div class="mb-4">
-        <label for="id-photo" class="block text-gray-700 font-bold mb-2"
-          >Upload a photo of your ID *</label
-        >
-        <input
-          type="file"
-          id="id-photo"
-          name="id-photo"
-          accept="image/*"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-          required
-        />
-      </div>
-
       <!-- Signature -->
       <div class="mb-4">
         <label for="signature" class="block text-gray-700 font-bold mb-2"
@@ -261,6 +450,7 @@
     </form>
 
     <script src="signature.js"></script>
-    <script src="pdf.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="forms-scripts.js"></script>
   </body>
 </html>
