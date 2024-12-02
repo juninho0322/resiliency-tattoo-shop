@@ -6,6 +6,7 @@
     <title>Resiliency Forms</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="forms-style.css" />
   </head>
   <body>
     <div
@@ -27,7 +28,7 @@
     <div class="p-1 text-2xl border-b-4 border-lime-500 m-5">
       <p>Personal Details</p>
     </div>
-    <form class="m-5 space-y-6">
+    <form class="m-5 space-y-6 tattoo-form">
       <!-- Name -->
       <div class="mb-4">
         <label for="name" class="block text-gray-700 font-bold mb-2"
@@ -37,7 +38,7 @@
           type="text"
           id="name"
           name="name"
-          placeholder="John Doe"
+          placeholder="Your name..."
           class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
           required
         />
@@ -48,6 +49,7 @@
         <label for="dob" class="block text-gray-700 font-bold mb-2"
           >Date of Birth *</label
         >
+         
         <input
           type="date"
           id="dob"
@@ -55,6 +57,7 @@
           class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
           required
         />
+        <p id="dob-error" class="text-red-500 text-sm mt-2 hidden"></p>
       </div>
 
       <!-- Phone -->
@@ -74,29 +77,29 @@
       <!-- Email -->
       <div class="mb-4">
         <label for="email" class="block text-gray-700 font-bold mb-2"
-          >Email</label
+          >Email *</label
         >
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="john.doe@example.com"
+          placeholder="myemail@example.com"
           class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          required
         />
       </div>
 
       <!-- City/State -->
       <div class="mb-4">
         <label for="city-state" class="block text-gray-700 font-bold mb-2"
-          >City/State *</label
-        >
+          >City/State
+        </label>
         <input
           type="text"
           id="city-state"
           name="city-state"
           placeholder="City, State"
           class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-          required
         />
       </div>
 
@@ -272,13 +275,19 @@
         <p>5. Are you pregnant or breastfeeding?</p>
         <p class="px-3"></p>
         <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+            
+       
+
         <label class="relative flex items-center cursor-pointer">
-          <input type="checkbox" value="" class="sr-only peer" />
+          <!-- Checkbox for 'Yes' -->
+          <input type="checkbox" id="check-pregnant"  class="sr-only peer" />
           <div
             class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
           ></div>
         </label>
         <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
+
+        <button id="button-test">test</button>
       </div>
 
       <div class="p-1 border-b-4 border-lime-500">
@@ -286,137 +295,111 @@
           Consent to tattoo procedure and release of liability
         </p>
       </div>
-      <!-- Checkbox 1 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox1"
-          name="option1"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox1" class="text-gray-700"
-          >I fully understand the risks, known and unknown, can lead to injury
-          including but not limited to: infections, scarring, difficulties in
-          the detection of melanoma and allergic reaction to tattoo pigment,
-          latex gloves and or soaps. Having been informed of the potential risks
-          associated with getting a tattoo, I wish to proceed with the tattoo
-          procedures and application and freely accept and expressly assume any
-          and all risks that may arise from tattooing.</label
-        >
-      </div>
 
-      <!-- Checkbox 2 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox2"
-          name="option2"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox2" class="text-gray-700"
-          >I waive and release to the fullest extent permitted by law any
-          persons of the Tattoo Studio from all liability whatsoever, including
-          but not limited to, any and all claims or causes of actions that I, my
-          estate, heirs, executors or assign may have for personal injury or
-          otherwise, including any direct and/ or consequential damages, which
-          results or arise from the procedure and application of my tattoo,
-          whether caused by the negligence or fault of either the Tattoo Studio
-          or otherwise.</label
-        >
-      </div>
+      <!-- Consent 1 -->
+      <p class="font-bold">1. Acknowledgement of Risks:</p>
+      <p class="p-consent">
+        I understand that tattooing involves risks, including but not limited to
+        pain, swelling, infection, scarring, allergic reactions, and other
+        complications. I have discussed any questions or concerns with the
+        tattoo artist and understand the risks involved.
+      </p>
+      <!-- Consent 2 -->
+      <p class="font-bold">2. Use of Anesthetic Products:</p>
+      <p class="p-consent">
+        I understand that Resiliency Tattoo Studio may offer optional topical
+        anesthetics for pain management. I am aware that use of these products
+        carries potential risks, including allergic reactions or ineffective
+        pain relief. I accept full responsibility for any issues resulting from
+        the use of anesthetics and release Resiliency Tattoo Studio from
+        liability regarding anesthetic use.
+      </p>
 
-      <!-- Checkbox 3 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox3"
-          name="option3"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox3" class="text-gray-700"
-          >I am not under the influence of alcohol or drugs, and I am
-          voluntarily submitting to be tattooed by the Tattoo Studio without
-          duress or coercion.</label
-        >
-      </div>
+      <!-- Consent 3 -->
+      <p class="font-bold">
+        3. Verification of Spelling, Language, and Design:
+      </p>
+      <p class="p-consent">
+        I understand that I am fully responsible for reviewing and approving any
+        text, spelling, or language in my tattoo design before the procedure
+        begins. Once I have confirmed the details, Resiliency Tattoo Studio is
+        not liable for any errors in spelling, design, or placement that have
+        been approved by me.
+      </p>
 
-      <!-- Checkbox 4 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox4"
-          name="option4"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox4" class="text-gray-700"
-          >I do not suffer from diabetes, epilepsy, hemophilia, heart
-          condition(s), nor do I take blood-thinning medication. I do not have
-          any other medical or skin condition that may interfere with the
-          procedure, application or healing of the tattoo. I am not pregnant or
-          nursing. I do not have a mental impairment that may affect my judgment
-          in getting a tattoo.</label
-        >
-      </div>
+      <!-- Consent 4 -->
+      <p class="font-bold">4. Health and Aftercare Responsibility:</p>
+      <p class="p-consent">
+        I confirm that I am in good health and have disclosed all relevant
+        medical history. I understand that proper aftercare is crucial for
+        healing and that failure to follow aftercare instructions provided by
+        [Studio Name] may result in complications for which Resiliency Tattoo
+        Studio is not responsible.
+      </p>
 
-      <!-- Checkbox 5 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox5"
-          name="option5"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox5" class="text-gray-700"
-          >I agree that the Tattoo Studio has a NO REFUND policy on tattoos and
-          or retail sales and I will not ask for a refund for any reason
-          whatsoever.</label
-        >
-      </div>
+      <!-- Consent 5 -->
+      <p class="font-bold">5.Release of Liability:</p>
+      <p class="p-consent">
+        I hereby release Resiliency Tattoo Studio and its artists or employees
+        from any and all claims, demands, damages, and liabilities arising from
+        or related to the tattoo procedure. I accept full responsibility for any
+        potential outcomes, including but not limited to infection, allergic
+        reactions, or dissatisfaction with the tattoo’s final appearance.
+      </p>
 
-      <!-- Checkbox 6 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox6"
-          name="option6"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox6" class="text-gray-700"
-          >I have been given aftercare instructions and understand that the
-          aftercare process is up to each individual customer, and any problem
-          that arises with the tattoo after it is completed is not part of the
-          Tattoo Studio or employees responsibility.</label
-        >
-      </div>
+      <!-- Consent 6 -->
+      <p class="font-bold">6. Legal Age Confirmation:</p>
+      <p class="p-consent">
+        I confirm that I am over the age of 18 and legally eligible to receive a
+        tattoo in the United Kingdom.
+      </p>
 
-      <!-- Checkbox 7 -->
-      <div class="flex items-center gap-4">
-        <input
-          type="checkbox"
-          id="checkbox7"
-          name="option7"
-          class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
-        />
-        <label for="checkbox7" class="text-gray-700"
-          >I also understand that the employees at the Tattoo Studios are
-          operating in compliance to the law, and will give me the professional
-          standard, in terms of sterilization, usage of disposable instruments,
-          and artistic standard.</label
-        >
-      </div>
+      <!-- Consent 7 -->
+      <p class="font-bold">7. Waiver of Future Claims:</p>
+      <p class="p-consent">
+        I agree that this waiver extends to any future claims related to this
+        tattoo procedure and that I cannot hold Resiliency Tattoo Studio liable
+        for issues arising from the procedure or the aftercare. This release is
+        binding upon me, my heirs, legal representatives, and assigns..
+      </p>
 
+      <!-- Consent 8 -->
+      <p class="font-bold">8.No Guarantee of Specific Outcome:</p>
+      <p class="p-consent">
+        I understand that Resiliency Tattoo Studio cannot guarantee a specific
+        outcome or exact color, shape, or style in the tattoo healing process,
+        as individual results may vary.
+      </p>
+
+      <!-- Consent 9 -->
+      <p class="font-bold">9.Permanent Nature of Tattoo:</p>
+      <p class="p-consent">
+        I understand that a tattoo is a permanent body modification. I am fully
+        aware that tattoo removal is difficult, expensive, and may not result in
+        complete removal.
+      </p>
+      <div class="p-1 border-b-4 border-lime-500">
+        <p class="text-2xl">Client declaration</p>
+      </div>
       <!-- Checkbox 8 -->
       <div class="flex items-center gap-4">
         <input
           type="checkbox"
-          id="checkbox8"
-          name="option8"
+          id="checkbox"
+          name="check-consents"
           class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
+          required
         />
-        <label for="checkbox8" class="text-gray-700"
-          >I hereby declare that I am of legal age (and have provided valid
-          proof of age and identification) and am competent to sign this
-          agreement.</label
+        <label for="checkbox" class="text-gray-700"
+          >I confirm that I have read, understood, and agree to the terms
+          outlined in this consent form. I have had the opportunity to ask
+          questions, and my questions have been answered to my satisfaction. I
+          fully understand the risks involved in tattooing and consent to the
+          procedure. I release Resiliency Tattoo Studio and its employees from
+          any liability associated with the procedure, anesthetic use, and
+          aftercare. I understand that this waiver does not affect any statutory
+          rights I may have under UK law but does constitute a waiver of other
+          claims..</label
         >
       </div>
 
@@ -429,11 +412,18 @@
           id="signature"
           class="border w-full h-32 bg-gray-100 rounded-lg"
         ></canvas>
-        <p class="text-sm text-gray-500 mt-1">
+        <div class="justify-between  flex mt-2 text-sm text-gray-500 mt-1">
+        <p class="content-center ">
           Use your mouse or finger to sign.
         </p>
+        <button class="mr-0 bg-lime-500 text-white p-1" id="clear-signature">Clear Signature</button>
       </div>
-
+      <p id="sign-request" class="text-red-500 text-sm mt-2 text-center hidden">Please sign off</p>
+      </div>
+      
+      </div>
+      
+      <div class="justify-center flex" id="currentDayDate">Loading...</div>
       <!-- Submit Button -->
       <div class="text-center">
         <button

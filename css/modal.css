@@ -12,10 +12,10 @@
 
 .close-modal {
   position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
+  top: 0.2rem;
+  right: 0.2rem;
+  font-size: 3rem;
+  color: white;
   cursor: pointer;
   border: none;
   background: none;
@@ -32,16 +32,16 @@
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center the modal using transform */
-
   width: 90%; /* Modal width */
   max-width: 600px; /* Optional: Set a maximum width */
   height: auto; /* Allow height to adjust based on content */
   max-height: 90%; /* Optional: Limit height to avoid overflowing */
   overflow-y: auto; /* Allow scrolling within the modal if content is too large */
-
-  background-color: white;
-  padding: 4rem;
+  background-color: black;
+  padding: 1rem;
   border-radius: 5px;
+  border-color: green;
+  border-style: double;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 999; /* Ensure it's above other elements */
 }
@@ -55,4 +55,14 @@
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+.tshirt-header {
+  color: white;
+  margin-top: 0px !important;
+  display: flex;
+}
+
+.h1-tshirts {
+  margin-top: 0;
 }

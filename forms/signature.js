@@ -66,9 +66,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Optional: Clear the canvas when the user clicks a clear button (if you have one)
   const clearButton = document.getElementById("clear-signature");
+
   if (clearButton) {
     clearButton.addEventListener("click", () => {
+      event.preventDefault();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     });
+  }
+
+  // Validation for the canvas on form submission - CANVAS CANNOT BE EMPTY
+  const form = document.querySelector("form");
+  const signRequested = document.getElementById("sign-request");
+
+  form.addEventListener("submit", (event) => {
+    if (canvasIsEmpty()) {
+      event.preventDefault(); // Prevent form submission
+      signRequested.classList.remove("hidden");
+      signRequested.textContent = "Please sign off";
+    } else {
+      signRequested.classList.add("hidden");
+    }
+  });
+
+  function canvasIsEmpty() {
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const pixels = imageData.data;
+    for (let i = 0; i < pixels.length; i += 4) {
+      if (
+        pixels[i] !== 0 ||
+        pixels[i + 1] !== 0 ||
+        pixels[i + 2] !== 0 ||
+        pixels[i + 3] !== 0
+      ) {
+        return false; // If any non-transparent pixel is found
+      }
+    }
+    return true; // Canvas is empty
   }
 });

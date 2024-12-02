@@ -142,16 +142,16 @@ function openEmail() {
 }
 /* temp alert box till email serve get worked
  */
-// document.addEventListener("DOMContentLoaded", function () {
-//   document
-//     .getElementById("submit-button")
-//     .addEventListener("click", function (event) {
-//       event.preventDefault();
-//       alert(
-//         "Sorry this form is in progress... send an email to:.info@resiliencytattoo.co.uk "
-//       );
-//     });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("submit-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      alert(
+        "Sorry this form is in progress... send an email to:.info@resiliencytattoo.co.uk "
+      );
+    });
+});
 
 // email form js
 document.addEventListener("DOMContentLoaded", () => {
@@ -169,10 +169,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(formData);
       try {
         // Send the form data via fetch to the server
-        const response = await fetch("http://153.92.208.179:8080/contact", {
-          method: "POST",
-          body: formData,
-        });
+        const response = await fetch(
+          "http://api.resiliencytattoo.co.uk/contact",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
         console.log(response);
 
         if (!response.ok) {
