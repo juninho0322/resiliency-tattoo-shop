@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(formData);
       try {
         // Send the form data via fetch to the server
-        const response = await fetch("http://153.92.208.179:8080/contact", {
+        const response = await fetch("http://153.92.208.179/contact", {
           method: "POST",
           body: formData,
         });
