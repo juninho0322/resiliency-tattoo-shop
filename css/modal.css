@@ -41,28 +41,59 @@
   padding: 1rem;
   border-radius: 5px;
   border-color: green;
-  border-style: double;
+  border-style: solid;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 999; /* Ensure it's above other elements */
+  z-index: 1001; /* Ensure it's above other elements */
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
+  backdrop-filter: blur(2px);
+  z-index: 1000;
 }
 
-.tshirt-header {
-  color: white;
-  margin-top: 0px !important;
-  display: flex;
-}
-
-.h1-tshirts {
+.h1-tshirt {
   margin-top: 0;
+}
+
+#email-modal {
+  position: fixed; /* Change from absolute to fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the modal using transform */
+  width: 80%; /* Modal width */
+  max-width: 600px; /* Optional: Set a maximum width */
+  height: auto; /* Allow height to adjust based on content */
+  max-height: 90%; /* Optional: Limit height to avoid overflowing */
+  overflow-y: auto; /* Allow scrolling within the modal if content is too large */
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  border-color: green;
+  border-style: solid;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1001; /* Ensure it's above other elements */
+}
+
+.email-modal-header h3 {
+  color: black;
+}
+
+#email-modal > p {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-button-modal {
+  color: black;
+  font-size: 1.5em;
+  border-radius: 5px;
+  border-color: green;
+  border-style: solid;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
 }

@@ -136,6 +136,7 @@
           <input
             type="checkbox"
             value=""
+            name="checkbox-q1"
             class="sr-only peer toggle-checkbox"
             data-target="allergy-input-container"
           />
@@ -156,6 +157,7 @@
         <input
           type="text"
           id="allergy-input"
+          name="input-q1"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
@@ -171,6 +173,7 @@
           <input
             type="checkbox"
             value=""
+            name="checkbox-q2"
             class="sr-only peer toggle-checkbox"
             data-target="medications-input-container"
           />
@@ -191,6 +194,7 @@
         <input
           type="text"
           id="allergy-input"
+          name="input-q2"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
@@ -208,6 +212,7 @@
           <input
             type="checkbox"
             value=""
+            name="checkbox-q3"
             class="sr-only peer toggle-checkbox"
             data-target="medical-input-container"
           />
@@ -228,6 +233,7 @@
         <input
           type="text"
           id="allergy-input"
+          name="input-q3"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
@@ -245,6 +251,7 @@
           <input
             type="checkbox"
             value=""
+            name="checkbox-q4"
             class="sr-only peer toggle-checkbox"
             data-target="keloids-input-container"
           />
@@ -265,6 +272,7 @@
         <input
           type="text"
           id="keloids-input"
+          name="input-q4"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
@@ -280,7 +288,7 @@
 
         <label class="relative flex items-center cursor-pointer">
           <!-- Checkbox for 'Yes' -->
-          <input type="checkbox" id="check-pregnant"  class="sr-only peer" />
+          <input type="checkbox" id="check-pregnant"  name="checkbox-q5" class="sr-only peer" />
           <div
             class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
           ></div>
@@ -381,12 +389,12 @@
       <div class="p-1 border-b-4 border-lime-500">
         <p class="text-2xl">Client declaration</p>
       </div>
-      <!-- Checkbox 8 -->
+      <!-- Checkbox consents -->
       <div class="flex items-center gap-4">
         <input
           type="checkbox"
           id="checkbox"
-          name="check-consents"
+          name="checkbox-consents"
           class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
           required
         />
@@ -411,6 +419,7 @@
         <canvas
           id="signature"
           class="border w-full h-32 bg-gray-100 rounded-lg"
+          name="signature"   
         ></canvas>
         <div class="justify-between  flex mt-2 text-sm text-gray-500 mt-1">
         <p class="content-center ">
@@ -423,7 +432,7 @@
       
       </div>
       
-      <div class="justify-center flex" id="currentDayDate">Loading...</div>
+      <div class="justify-center flex" id="currentDayDate"></div>
       <!-- Submit Button -->
       <div class="text-center">
         <button

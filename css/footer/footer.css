@@ -87,6 +87,7 @@
 .footer-email {
   font-size: 1em;
   margin-top: 1em;
+  cursor: pointer;
 }
 
 .footer-luis {

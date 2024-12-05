@@ -1,7 +1,7 @@
 .book {
   background-color: black;
   position: relative;
-  z-index: 1;
+  /* z-index: 99; */
 }
 
 .book-background {
@@ -10,17 +10,21 @@
   width: 50%;
   min-height: 100vh;
   position: absolute;
-  z-index: -2;
+  /* z-index: -2; */
   margin-left: 50%;
+}
+
+.container-book {
+  padding-bottom: 1em !important;
 }
 
 .book-content {
   display: flex;
   flex-wrap: wrap;
-  padding: 130px 2em;
+  padding: 100px 2em;
   justify-content: left;
   margin: 0 auto;
-  min-height: 100svh;
+  min-height: 80svh;
 }
 
 .form-flex {
@@ -115,7 +119,7 @@ input[type="text"]:focus {
 }
 
 .book-content .divider {
-  margin-top: 6em;
+  margin-top: 2em;
 }
 
 #loader {

@@ -9,10 +9,20 @@
   }
 }
 
+@media (max-width: 950px) {
+  .form-flex {
+    justify-content: center;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 800px) {
   .form-flex {
     min-width: 100%;
     padding: 1em;
+    justify-content: center;
   }
 
   .form-control {

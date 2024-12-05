@@ -1,19 +1,4 @@
-// alert(`testing`);
-
-/*
-  this need to be actived when the email server works
-*/
-
-// document
-//   .getElementById("form-email")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault(); // Prevent the default form submission behavior
-//     document.getElementById("submit-button").disabled = true; // Disable the submit button
-
-//     // Optionally, add your own form submission logic if needed:
-//     this.submit(); // Only submit once
-//   });
-
+// PHOTO SWIPE LIBRARY
 var lightbox = new PhotoSwipeLightbox({
   gallery: ".studio-gallery",
   children: "a",
@@ -59,22 +44,12 @@ var lightbox04 = new PhotoSwipeLightbox({
 
 lightbox04.init();
 
-function showMessage() {
-  // Show a simple message
-  alert("This is your message!");
-}
-
-// document.querySelector("#button-book").addEventListener("click", function () {
-//     alert(`test`);
-//     console.log(`test`);
-// });
-
 // function click menu-burger activate
 var burgerButton = document.querySelector("#burger");
 var burgerMenu = document.getElementById("burger-menu");
 
+// Toggle visibility
 function toggleBurgerMenu() {
-  // Toggle visibility
   burgerMenu.classList.toggle("active");
   document.querySelector("body").classList.toggle("noscroll");
 }
@@ -86,20 +61,19 @@ document.querySelectorAll(".js-close").forEach(function (itemMenu) {
   itemMenu.addEventListener("click", toggleBurgerMenu);
 });
 
-console.log(document.querySelectorAll(".js-close"));
-
-// accordion faq section
-var acc = document.getElementsByClassName("accordion");
-var i;
+// Accordion faq section
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
+   to highlight the button that controls the panel */
+
     this.classList.toggle("active");
 
     /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
+    let panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
@@ -108,9 +82,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//links social media
-
 // JavaScript function that accepts a URL as a parameter
+// redirect the social media links opening a new tab
 function redirectToPage(url) {
   window.open(url, "_blank"); // Opens the link in a new tab
 }
@@ -140,18 +113,6 @@ function openEmail() {
   // Open the mailto link
   window.location.href = mailtoLink;
 }
-/* temp alert box till email serve get worked
- */
-// document.addEventListener("DOMContentLoaded", function () {
-//   document
-//     .getElementById("submit-button")
-//     .addEventListener("click", function (event) {
-//       event.preventDefault();
-//       alert(
-//         "Sorry this form is in progress... send an email to:.info@resiliencytattoo.co.uk "
-//       );
-//     });
-// });
 
 // email form js
 document.addEventListener("DOMContentLoaded", () => {
@@ -162,18 +123,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Disable the submit button
       document.getElementById("submit-button").disabled = true;
+      document.getElementById("submit-button").textContent = "Sending...";
 
-      console.log(event.target);
       // Collect the form data
       const formData = new FormData(event.target);
-      console.log(formData);
+
       try {
         // Send the form data via fetch to the server
         const response = await fetch("http://153.92.208.179/contact", {
           method: "POST",
           body: formData,
         });
-        console.log(response);
 
         if (!response.ok) {
           // If the response is not OK (e.g., 400 or 500 status code)
@@ -182,21 +142,22 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("Error sending email: " + errorResult.error);
           return;
         }
+        // Email submission successful
+        document.getElementById("submit-button").textContent = "Sending...";
+        setTimeout(() => {}, 2000);
 
-        // Show a success message
-        alert("Email sent sucessfully.");
+        // After email sent successfully, open the email modal
+        const emailModal = document.getElementById("email-modal");
+
+        emailModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
       } catch (error) {
-        console.error("Error:", error);
-
-        alert("Error");
       } finally {
         // Re-enable the submit button
+
         document.getElementById("submit-button").disabled = false;
+        document.getElementById("submit-button").textContent = "Submit";
         document.getElementById("form-email").reset();
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
       }
     });
 });

@@ -1,32 +1,50 @@
 // "use strict";
 
-const modal = document.querySelector(".modal-sections");
+// const modal = document.querySelector(".modal-sections");
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close-modal");
+const btnCloseModal = document.querySelectorAll(".close-modal");
 const btnOpenModal = document.querySelectorAll(".show-modal");
 
-const openModal = function () {
+const openModal = function (modal) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
+
   document.body.style.overflow = "hidden"; // Prevent background scrolling
 };
 
-const closeModal = function () {
+const closeModal = function (modal) {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
   document.body.style.overflow = ""; // Reset overflow to allow scrolling
 };
 
-// because its a querySelectorAll, for interation is used to get all the classes show-modal and aplly the eventListener to them
-for (let i = 0; i < btnOpenModal.length; i++) {
-  btnOpenModal[i].addEventListener("click", openModal);
-}
+// Attach click event to all buttons with 'show-modal' class
+btnOpenModal.forEach((trigger) => {
+  trigger.addEventListener("click", function () {
+    const modalSelector = `#${trigger.getAttribute("data-target")}`; // Get modal selector from data-target
+    const modal = document.querySelector(modalSelector); // Select the corresponding modal
+    openModal(modal); // Open the selected modal
+  });
+});
 
-btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+// Attach click event to all buttons with 'close-modal' class
+btnCloseModal.forEach((button) => {
+  button.addEventListener("click", function () {
+    const modal = button.closest(".modal-sections"); // Get the closest modal to the button
+    if (modal) closeModal(modal); // Close it if found
+  });
+});
 
+// Close modal when overlay is clicked
+overlay.addEventListener("click", function () {
+  const openModal = document.querySelector(".modal-sections:not(.hidden)"); // Find the currently open modal
+  if (openModal) closeModal(openModal); // Close it if found
+});
+
+// Close modal when 'Escape' key is pressed
 document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
-    closeModal();
+  if (event.key === "Escape") {
+    const openModal = document.querySelector(".modal-sections:not(.hidden)"); // Find the currently open modal
+    if (openModal) closeModal(openModal); // Close it if found
   }
 });
