@@ -211,8 +211,13 @@
             tattoo supplies for the aspiring artist in you! Visit us today and
             let's create something unforgettable together!.
           </p>
+
+          <!-- TATTOO BOX -->
           <div class="type-services">
-            <div class="service-box ml-lg-0">
+            <div
+              class="service-box ml-lg-0 show-modal"
+              data-target="modal-tattoo"
+            >
               <img src="images/icons/tattoo-w.png" alt="" />
               <h3 class="h3-hover">TATTOO</h3>
               <p>...</p>
@@ -220,7 +225,37 @@
               <div class="service-box-button-top"></div>
             </div>
 
-            <div class="service-box">
+            <!-- TATTOO MODAL -->
+            <div class="modal-sections flex hidden" id="modal-tattoo">
+              <button class="close-modal" data-target="modal-tattoo">
+                &times;
+              </button>
+              <div class="modal-header">
+                <p class="p-modal">TATTOO</p>
+              </div>
+
+              <p>
+                At our tattoo studio, every design tells a story—your story. We
+                take immense pride in our craft, combining creativity,
+                precision, and passion to deliver truly unique and personalized
+                artwork. Our skilled artists are dedicated professionals who
+                prioritize your comfort and satisfaction, ensuring a safe and
+                unforgettable tattooing experience. Your vision is our
+                inspiration, and your trust is our commitment.
+              </p>
+              <div class="modal-img">
+                <img
+                  class="img-modals"
+                  src="images/logo-section-team-2.png"
+                  alt=""
+                  width="130px"
+                  height="100px"
+                />
+              </div>
+            </div>
+
+            <!-- PIERCING BOX -->
+            <div class="service-box show-modal" data-target="modal-piercing">
               <img src="images/icons/piercings-w.png" alt="" />
               <h3 class="h3-hover">PIERCING</h3>
               <p>...</p>
@@ -228,7 +263,40 @@
               <div class="service-box-button-top"></div>
             </div>
 
-            <div class="service-box mr-lg-0">
+            <!-- PIERCING MODAL -->
+            <div class="modal-sections hidden" id="modal-piercing">
+              <button class="close-modal" data-target="modal-piercing">
+                &times;
+              </button>
+              <div class="modal-header">
+                <p class="p-modal">PIERCING</p>
+              </div>
+              <p>
+                At our studio, we celebrate individuality and self-expression.
+                Every piercing is performed with precision, care, and a deep
+                commitment to professionalism. Using only the highest-quality
+                materials and techniques, we ensure a safe and comfortable
+                experience. Whether it's your first piercing or a new addition,
+                we are here to make it a unique and memorable moment, tailored
+                to your style and personality.
+              </p>
+              <div class="modal-img">
+                <img
+                  class="img-modals"
+                  src="images/logo-section-team-2.png"
+                  alt=""
+                  width="130px"
+                  height="100px"
+                />
+              </div>
+            </div>
+            <div class="overlay hidden"></div>
+
+            <!-- REMOVAL BOX -->
+            <div
+              class="service-box mr-lg-0 show-modal"
+              data-target="modal-removal"
+            >
               <img src="images/icons/laser-w.png" alt="" />
               <h3 class="h3-hover">REMOVAL</h3>
               <p>...</p>
@@ -236,13 +304,74 @@
               <div class="service-box-button-top"></div>
             </div>
 
-            <div class="service-box ml-lg-0">
+            <!-- REMOVAL MODAL -->
+            <div class="modal-sections hidden" id="modal-removal">
+              <button class="close-modal" data-target="modal-removal">
+                &times;
+              </button>
+              <div class="modal-header">
+                <p class="p-modal">REMOVAL</p>
+              </div>
+              <p>
+                We're excited to share that we're preparing to offer
+                professional tattoo removal services using advanced laser
+                technology. Soon, you'll have access to a safe and effective way
+                to fade or remove unwanted tattoos, all while receiving the same
+                care and precision we're known for. Stay tuned as we finalize
+                our preparations to bring you this new service, designed with
+                your comfort and satisfaction in mind.
+              </p>
+              <div class="modal-img">
+                <img
+                  class="img-modals"
+                  src="images/logo-section-team-2.png"
+                  alt=""
+                  width="130px"
+                  height="100px"
+                />
+              </div>
+            </div>
+            <div class="overlay hidden"></div>
+
+            <!-- SUPPLIES BOX -->
+            <div
+              class="service-box ml-lg-0 show-modal"
+              data-target="modal-supplies"
+            >
               <img src="images/icons/ink-w.png" alt="" />
               <h3 class="h3-hover">SUPPLIES</h3>
               <p>...</p>
               <div class="service-box-button-bottom"></div>
               <div class="service-box-button-top"></div>
             </div>
+
+            <!-- SUPPLIES MODAL -->
+            <div class="modal-sections hidden" id="modal-supplies">
+              <button class="close-modal" data-target="modal-supplies">
+                &times;
+              </button>
+              <div class="modal-header">
+                <p class="p-modal">SUPPLIES</p>
+              </div>
+              <p>
+                We are proud to offer high-quality supplies tailored to the
+                needs of small and medium tattoo studios. From premium inks to
+                reliable equipment, our carefully curated materials are designed
+                to help artists create their best work. Partner with us to
+                ensure your shop is equipped with the trusted tools you need to
+                succeed.
+              </p>
+              <div class="modal-img">
+                <img
+                  class="img-modals"
+                  src="images/logo-section-team-2.png"
+                  alt=""
+                  width="130px"
+                  height="100px"
+                />
+              </div>
+            </div>
+            <div class="overlay hidden"></div>
 
             <!-- AFTERCARE BOX -->
             <div class="service-box show-modal" data-target="modal-aftercare">
@@ -255,16 +384,28 @@
 
             <!-- AFTERCARE MODAL -->
             <div class="modal-sections hidden" id="modal-aftercare">
-              <button class="close-modal">&times;</button>
-              <div class="email-modal-header">
-                <h3>AFTERCARE</h3>
+              <button class="close-modal" data-target="modal-aftercare">
+                &times;
+              </button>
+              <div class="modal-header">
+                <p class="p-modal">AFTERCARE</p>
               </div>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                animi voluptates quaerat ad architecto ducimus illo adipisci ea,
-                itaque dolor molestias inventore repellat consectetur fuga saepe
-                est rem iure eos.
+                Aftercare is a crucial part of preserving your tattoo's vibrancy
+                and ensuring proper healing. We understand its importance, which
+                is why we offer top-quality aftercare products designed to
+                protect and nourish your skin. Trust us to help you maintain
+                your tattoo’s brilliance for years to come!
               </p>
+              <div class="modal-img">
+                <img
+                  class="img-modals"
+                  src="images/logo-section-team-2.png"
+                  alt=""
+                  width="130px"
+                  height="100px"
+                />
+              </div>
             </div>
             <div class="overlay hidden"></div>
 
@@ -283,16 +424,27 @@
 
           <!-- TSHIRTS MODAL -->
           <div class="modal-sections hidden" id="modal-tshirt">
-            <button class="close-modal">&times;</button>
-            <div class="email-modal-header">
-              <h3>T-SHIRTS</h3>
+            <button class="close-modal" data-target="modal-tshirt">
+              &times;
+            </button>
+            <div class="modal-header">
+              <p class="p-modal">T-SHIRTS</p>
             </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-              animi voluptates quaerat ad architecto ducimus illo adipisci ea,
-              itaque dolor molestias inventore repellat consectetur fuga saepe
-              est rem iure eos.
+              We’re excited to share that an exclusive line of T-shirts is in
+              the works! Soon, you’ll be able to wear unique designs inspired by
+              the art and culture of tattooing. Stay tuned for the launch of our
+              premium brand—crafted with passion and style!
             </p>
+            <div class="modal-img">
+              <img
+                class="img-modals"
+                src="images/logo-section-team-2.png"
+                alt=""
+                width="130px"
+                height="100px"
+              />
+            </div>
           </div>
           <div class="overlay hidden"></div>
 
@@ -549,7 +701,6 @@
 
       <section class="book" id="book">
         <div class="book-background"></div>
-
         <div class="container-book book-content" data-aos="zoom-in-right">
           <form id="form-email" enctype="multipart/form-data">
             <div class="form-flex">
@@ -609,19 +760,37 @@
             </div>
           </form>
 
+          <!-- MODAL EMAIL SENT -->
           <div class="modal-sections hidden" id="email-modal">
-            <button class="close-modal email-button-modal">&times;</button>
+            <button
+              class="close-modal email-button-modal"
+              data-target="email-modal"
+              id="email-button-modal"
+            >
+              &times;
+            </button>
             <div class="email-modal-header">
               <h3>Thanks for reaching out!</h3>
             </div>
+
             <p>
               We’ll get back to you as soon as possible, usually within 48
               hours. If you need a faster response, feel free to call the studio
               directly. Check your Spam folder if you don’t hear from us soon.
               <br />
-              Have a great day! 😊 <br />Resiliency Tattoo Studio
+              Have a great day! 😊 <br />
             </p>
+            <div class="email-modal-img">
+              <img
+                class="img-modals"
+                src="images/logo-section-team-2.png"
+                alt=""
+                width="130px"
+                height="100px"
+              />
+            </div>
           </div>
+          <div class="overlay hidden" id="overlay-email"></div>
 
           <div id="loader"></div>
           <div class="divider">

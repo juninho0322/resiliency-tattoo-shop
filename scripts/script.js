@@ -114,6 +114,11 @@ function openEmail() {
   window.location.href = mailtoLink;
 }
 
+// document.getElementById("submit-button").addEventListener("click", function () {
+//   const emailAddress = "info@resiliencytattoo.co.uk"; // Replace with your email
+//   alert(`Form in progress, please send an email to: ${emailAddress}`);
+// });
+
 // email form js
 document.addEventListener("DOMContentLoaded", () => {
   document
@@ -138,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!response.ok) {
           // If the response is not OK (e.g., 400 or 500 status code)
           const errorResult = await response.json();
-          console.log(errorResult);
+          S;
           alert("Error sending email: " + errorResult.error);
           return;
         }
@@ -148,9 +153,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // After email sent successfully, open the email modal
         const emailModal = document.getElementById("email-modal");
+        const emailOverlay = document.getElementById("overlay-email");
+        const btnEmailClose = document.getElementById("email-button-modal");
+        const bookDiv = document.getElementById("book");
 
         emailModal.classList.remove("hidden");
         document.body.style.overflow = "hidden"; // Prevent background scrolling
+        emailOverlay.classList.remove("hidden");
+
+        // when the email-modal is closed the below removes the overlay whether by pressing ESC or clicking the button X (close)
+        function removeOverlay(event) {
+          if (event.type === "click") {
+            emailOverlay.classList.add("hidden");
+            emailModal.classList.add("hidden");
+            document.body.style.overflow = ""; // Prevent background scrolling
+          }
+          if (event.type === "keydown" && event.key === "Escape") {
+            emailOverlay.classList.add("hidden");
+          }
+        }
+
+        btnEmailClose.addEventListener("click", removeOverlay);
+        document.addEventListener("keydown", removeOverlay);
+        emailOverlay.addEventListener("click", removeOverlay);
+
+        // scroll the page to the top of the div, making sure the modal will be visible to be closed.
+        bookDiv.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
       } catch (error) {
       } finally {
         // Re-enable the submit button

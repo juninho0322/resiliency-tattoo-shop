@@ -8,7 +8,6 @@ const btnOpenModal = document.querySelectorAll(".show-modal");
 const openModal = function (modal) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
-
   document.body.style.overflow = "hidden"; // Prevent background scrolling
 };
 
@@ -30,8 +29,11 @@ btnOpenModal.forEach((trigger) => {
 // Attach click event to all buttons with 'close-modal' class
 btnCloseModal.forEach((button) => {
   button.addEventListener("click", function () {
-    const modal = button.closest(".modal-sections"); // Get the closest modal to the button
-    if (modal) closeModal(modal); // Close it if found
+    const modalSelector = `#${button.getAttribute("data-target")}`; // Get the target modal selector
+    if (modalSelector) {
+      const modal = document.querySelector(modalSelector); // Find the modal
+      if (modal) closeModal(modal); // Close it if found
+    }
   });
 });
 
