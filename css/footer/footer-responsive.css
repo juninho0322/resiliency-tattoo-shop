@@ -43,7 +43,13 @@
   }
 
   .footer-end {
-    padding-top: 10em;
+    padding-top: 4em;
     text-align: center;
+  }
+
+  .map {
+    padding-top: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
