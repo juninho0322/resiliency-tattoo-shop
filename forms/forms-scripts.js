@@ -50,11 +50,13 @@ updateCurrentDayDate();
 const buttonTest = document.getElementById("button-test");
 const checkbox = document.getElementById("check-pregnant");
 
-buttonTest.addEventListener("click", function (event) {
-  event.preventDefault();
-  let selectedValue = checkbox.checked ? "Yes" : "No";
-  alert(selectedValue);
-});
+// check if the user select yes ot no on the checkbox
+
+// buttonTest.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   let selectedValue = checkbox.checked ? "Yes" : "No";
+//   alert(selectedValue);
+// });
 
 // Validate the DOB over 18 and valid DOB
 document.addEventListener("DOMContentLoaded", () => {

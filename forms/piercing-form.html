@@ -12,17 +12,19 @@
     <div
       class="bg-black w-full h-30 text-white flex justify-between items-center px-6"
     >
-      <p class="text-2xl">Tattoo Consent Form</p>
+      <p class="text-2xl">Piercing Consent Form</p>
       <img src="../images/logo-menu.png" alt="" width="100" height="100" />
     </div>
 
     <div class="w-full h-30 p-5 justify-center items-center">
       <p class="text-2xl text-red-600 pb-5 text-center">IMPORTANT NOTICE.</p>
       <p>
-        Please carefully review and complete this consent form before proceeding
-        with your tattoo. By signing, you acknowledge the risks associated with
-        tattooing and agree to release Resiliency Tattoo Studio and its
-        employees from any liability related to the tattoo procedure.
+        This form is intended to ensure that all clients understand the risks
+        associated with body piercing. Please read the following information
+        carefully and ask any questions you may have before signing. By signing
+        this form, you consent to the piercing procedure and release Resiliency
+        Tattoo and its employees from any and all liability related to your
+        piercing.
       </p>
     </div>
     <div class="p-1 text-2xl border-b-4 border-lime-500 m-5">
@@ -33,95 +35,111 @@
       <div class="mb-4 md:flex md:space-x-4">
         <div class="flex-1">
           <div class="max-md:mb-6">
-            <label for="name" class="block text-gray-700 font-bold mb-2">
-              Full Name *
-            </label>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2"
+                >Full Name *</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name..."
+                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <!-- Date of Birth -->
+          <div class="mb-4">
+            <label for="dob" class="block text-gray-700 font-bold mb-2"
+              >Date of Birth *</label
+            >
+
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name..."
+              type="date"
+              id="dob"
+              name="dob"
+              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+              required
+            />
+            <p id="dob-error" class="text-red-500 text-sm mt-2 hidden"></p>
+          </div>
+        </div>
+      </div>
+      <!-- Phone and Email -->
+      <div class="mb-4 md:flex md:space-x-4">
+        <div class="flex-1">
+          <div class="max-md:mb-6">
+            <div class="mb-4">
+              <label for="phone" class="block text-gray-700 font-bold mb-2"
+                >Phone</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(123) 456-7890"
+                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="flex-1">
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2"
+              >Email *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="myemail@example.com"
               class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
               required
             />
           </div>
         </div>
-        <div class="flex-1">
-          <label for="dob" class="block text-gray-700 font-bold mb-2">
-            Date of Birth *
-          </label>
-          <input
-            type="date"
-            id="dob"
-            name="dob"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            required
-          />
-          <p id="dob-error" class="text-red-500 text-sm mt-2 hidden"></p>
-        </div>
       </div>
-
-      <!-- Phone and Email -->
-      <div class="mb-4 md:flex md:space-x-4">
-        <div class="flex-1">
-          <div class="max-md:mb-6">
-            <label for="phone" class="block text-gray-700 font-bold mb-2">
-              Phone
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="(123) 456-7890"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            />
-          </div>
-        </div>
-        <div class="flex-1">
-          <label for="email" class="block text-gray-700 font-bold mb-2">
-            Email *
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="myemail@example.com"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            required
-          />
-        </div>
-      </div>
-
       <!-- City/State and ID Photo -->
       <div class="mb-4 md:flex md:space-x-4">
         <div class="flex-1">
           <div class="max-md:mb-6">
-            <label for="city-state" class="block text-gray-700 font-bold mb-2">
-              City/State
-            </label>
-            <input
-              type="text"
-              id="city-state"
-              name="city-state"
-              placeholder="City, State"
-              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            />
+            <div class="mb-4">
+              <label for="city-state" class="block text-gray-700 font-bold mb-2"
+                >City/State
+              </label>
+              <input
+                type="text"
+                id="city-state"
+                name="city-state"
+                placeholder="City, State"
+                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+              />
+            </div>
           </div>
         </div>
         <div class="flex-1">
-          <label for="id-photo" class="block text-gray-700 font-bold mb-2">
-            Upload a photo of your ID *
-          </label>
-          <input
-            type="file"
-            id="id-photo"
-            name="id-photo"
-            accept="image/*"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            required
-          />
+          <!-- Upload ID Photo -->
+          <div class="mb-4">
+            <label for="id-photo" class="block text-gray-700 font-bold mb-2"
+              >Upload a photo of your ID *</label
+            >
+            <input
+              type="file"
+              id="id-photo"
+              name="id-photo"
+              accept="image/*"
+              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+              required
+            />
+          </div>
         </div>
       </div>
+
       <div class="p-1 border-b-4 border-lime-500 w">
         <p class="text-2xl">Medical History</p>
       </div>
@@ -134,14 +152,14 @@
         <p>
           1. Do you have any allergies (especially to dyes, latex, or metals)?
         </p>
-        <div class="flex items-center">
+        <div class="flex justify-center items-center">
           <p class="px-3"></p>
           <span class="mr-3 text-sm font-medium text-gray-600">No</span>
           <label class="relative flex items-center cursor-pointer">
             <input
               type="checkbox"
               value=""
-              name="checkbox-t-q1"
+              name="checkbox-p-q1"
               class="sr-only peer toggle-checkbox"
               data-target="allergy-input-container"
             />
@@ -163,33 +181,32 @@
         <input
           type="text"
           id="allergy-input"
-          name="input-t-q1"
+          name="input-p-q1"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
       </div>
       <!-- QUESTION 2 -->
-      <div class="flex max-md:justify-between medical-questions">
+      <div class="flex items-center medical-questions">
         <p>
-          2. Are you currently taking any medications (e.g., blood thinners)?
+          2.Do you take any medication or have any medical conditions (e.g.,
+          diabetes, blood disorders, heart conditions)?
         </p>
-        <div class="flex items-center">
-          <p class="px-3"></p>
-          <span class="mr-3 text-sm font-medium text-gray-600">No</span>
-          <label class="relative flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              value=""
-              name="checkbox-t-q2"
-              class="sr-only peer toggle-checkbox"
-              data-target="medications-input-container"
-            />
-            <div
-              class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
-            ></div>
-          </label>
-          <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
-        </div>
+        <p class="px-3"></p>
+        <span class="mr-3 text-sm font-medium text-gray-600">No</span>
+        <label class="relative flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            name="checkbox-p-q2"
+            class="sr-only peer toggle-checkbox"
+            data-target="medications-input-container"
+          />
+          <div
+            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
+          ></div>
+        </label>
+        <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
       </div>
       <!-- Hidden input field for Question 2 -->
       <div id="medications-input-container" class="hidden mt-4">
@@ -202,7 +219,7 @@
         <input
           type="text"
           id="allergy-input"
-          name="input-t-q2"
+          name="input-p-q2"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
@@ -211,8 +228,8 @@
       <!-- QUESTION 3 -->
       <div class="flex items-center medical-questions">
         <p>
-          3. Do you have any medical conditions (e.g., diabetes, heart
-          conditions, epilepsy) that may impact the tattooing process?
+          3.Do you have any history of keloids, hypertrophic scarring, or issues
+          with healing?
         </p>
         <p class="px-3"></p>
         <span class="mr-3 text-sm font-medium text-gray-600">No</span>
@@ -220,7 +237,7 @@
           <input
             type="checkbox"
             value=""
-            name="checkbox-t-q3"
+            name="checkbox-p-q3"
             class="sr-only peer toggle-checkbox"
             data-target="medical-input-container"
           />
@@ -236,70 +253,30 @@
           for="medical-input"
           class="block text-sm font-medium text-gray-700"
         >
-          Please specify the medical conditions:
+          Please specify the history:
         </label>
         <input
           type="text"
           id="allergy-input"
-          name="input-t-q3"
+          name="input-p-q3"
           placeholder="Type here..."
           class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
       </div>
 
       <!-- QUESTION 4 -->
-      <div class="flex items-center max-md:justify-between medical-questions">
-        <p>
-          4. Do you have any history of skin conditions or issues with
-          scarring/keloids?
-        </p>
+      <div class="flex max-md:justify-between justify-start medical-questions">
+        <p>4. Are you pregnant or breastfeeding?</p>
         <div class="flex items-center">
           <p class="px-3"></p>
           <span class="mr-3 text-sm font-medium text-gray-600">No</span>
-          <label class="relative flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              value=""
-              name="checkbox-t-q4"
-              class="sr-only peer toggle-checkbox"
-              data-target="keloids-input-container"
-            />
-            <div
-              class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-lime-500 hover:peer-checked:bg-lime-500"
-            ></div>
-          </label>
-          <span class="ml-3 text-sm font-medium text-gray-600">Yes</span>
-        </div>
-      </div>
-      <!-- Hidden input field for Question 4 -->
-      <div id="keloids-input-container" class="hidden mt-4">
-        <label
-          for="keloids-input"
-          class="block text-sm font-medium text-gray-700"
-        >
-          Please specify any history of skin conditions:
-        </label>
-        <input
-          type="text"
-          id="keloids-input"
-          name="input-t-q4"
-          placeholder="Type here..."
-          class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
-      </div>
 
-      <!-- QUESTION 5 -->
-      <div class="flex items-center max-md:justify-between medical-questions">
-        <p>5. Are you pregnant or breastfeeding?</p>
-        <div class="flex items-center">
-          <p class="px-3"></p>
-          <span class="mr-3 text-sm font-medium text-gray-600">No</span>
           <label class="relative flex items-center cursor-pointer">
             <!-- Checkbox for 'Yes' -->
             <input
               type="checkbox"
               id="check-pregnant"
-              name="checkbox-t-q5"
+              name="checkbox-p-q4"
               class="sr-only peer"
             />
             <div
@@ -313,93 +290,75 @@
       </div>
 
       <div class="p-1 border-b-4 border-lime-500">
-        <p class="text-2xl">
-          Consent to tattoo procedure and release of liability
-        </p>
+        <p class="text-2xl">Consent to procedure and release of liability</p>
       </div>
 
       <!-- Consent 1 -->
       <p class="font-bold">1. Acknowledgement of Risks:</p>
       <p class="p-consent">
-        I understand that tattooing involves risks, including but not limited to
-        pain, swelling, infection, scarring, allergic reactions, and other
-        complications. I have discussed any questions or concerns with the
-        tattoo artist and understand the risks involved.
+        I understand that body piercing involves risks, including but not
+        limited to pain, swelling, infection, scarring, allergic reactions, and
+        other complications. I confirm that I have discussed any questions or
+        concerns I may have regarding these risks with the piercer.
       </p>
       <!-- Consent 2 -->
-      <p class="font-bold">2. Use of Anesthetic Products:</p>
+      <p class="font-bold">2. Health and Healing:</p>
       <p class="p-consent">
-        I understand that Resiliency Tattoo Studio may offer optional topical
-        anesthetics for pain management. I am aware that use of these products
-        carries potential risks, including allergic reactions or ineffective
-        pain relief. I accept full responsibility for any issues resulting from
-        the use of anesthetics and release Resiliency Tattoo Studio from
-        liability regarding anesthetic use.
+        I confirm that I am in good health and have disclosed all relevant
+        medical history. I understand that healing times may vary and that it is
+        my responsibility to follow the aftercare instructions provided. I
+        acknowledge that failure to follow these instructions may result in
+        complications.
       </p>
 
       <!-- Consent 3 -->
-      <p class="font-bold">
-        3. Verification of Spelling, Language, and Design:
-      </p>
+      <p class="font-bold">3.Release of Liability:</p>
       <p class="p-consent">
-        I understand that I am fully responsible for reviewing and approving any
-        text, spelling, or language in my tattoo design before the procedure
-        begins. Once I have confirmed the details, Resiliency Tattoo Studio is
-        not liable for any errors in spelling, design, or placement that have
-        been approved by me.
+        I hereby release Resiliency Tattoo Studio and its employees or
+        contractors from any and all claims, demands, damages, and liabilities
+        arising from or related to the piercing procedure, including, but not
+        limited to, injuries, infections, or reactions resulting from the
+        piercing or associated aftercare.
       </p>
 
       <!-- Consent 4 -->
-      <p class="font-bold">4. Health and Aftercare Responsibility:</p>
+      <p class="font-bold">4. Minors (Under 18 Years):</p>
       <p class="p-consent">
-        I confirm that I am in good health and have disclosed all relevant
-        medical history. I understand that proper aftercare is crucial for
-        healing and that failure to follow aftercare instructions provided by
-        [Studio Name] may result in complications for which Resiliency Tattoo
-        Studio is not responsible.
+        I confirm that I am over the age of 18.
+        <span class="font-bold por"> <br />--- OR ---<br /></span>
+        I confirm that I am the parent/legal guardian of the minor receiving the
+        piercing and consent to the procedure on their behalf. I understand that
+        the same risks and conditions outlined in this form apply to them.
       </p>
 
       <!-- Consent 5 -->
-      <p class="font-bold">5.Release of Liability:</p>
+      <p class="font-bold">5. Waiver of Future Claims:</p>
       <p class="p-consent">
-        I hereby release Resiliency Tattoo Studio and its artists or employees
-        from any and all claims, demands, damages, and liabilities arising from
-        or related to the tattoo procedure. I accept full responsibility for any
-        potential outcomes, including but not limited to infection, allergic
-        reactions, or dissatisfaction with the tattoo’s final appearance.
+        I understand and agree that this waiver extends to any claims I may have
+        in the future arising out of or related to the piercing procedure or
+        aftercare advice provided by Resiliency Tattoo Studio. This release of
+        liability is binding on me, my heirs, legal representatives, and
+        assigns.
       </p>
 
       <!-- Consent 6 -->
-      <p class="font-bold">6. Legal Age Confirmation:</p>
+      <p class="font-bold">6. No Guarantee of Specific Outcome:</p>
       <p class="p-consent">
-        I confirm that I am over the age of 18 and legally eligible to receive a
-        tattoo in the United Kingdom.
+        I understand that Resiliency Tattoo Studio does not guarantee a specific
+        outcome from the piercing procedure and that individual healing results
+        may vary.
       </p>
 
-      <!-- Consent 7 -->
-      <p class="font-bold">7. Waiver of Future Claims:</p>
-      <p class="p-consent">
-        I agree that this waiver extends to any future claims related to this
-        tattoo procedure and that I cannot hold Resiliency Tattoo Studio liable
-        for issues arising from the procedure or the aftercare. This release is
-        binding upon me, my heirs, legal representatives, and assigns..
+      <div class="p-1 border-b-4 border-lime-500">
+        <p class="text-2xl">Aftercare instructions</p>
+      </div>
+      <p>
+        I have received and understand the aftercare instructions provided by
+        Resiliency Tattoo Studio for the piercing. I agree to follow these
+        instructions to the best of my ability and understand that failure to do
+        so may increase the risk of complications.
       </p>
 
-      <!-- Consent 8 -->
-      <p class="font-bold">8.No Guarantee of Specific Outcome:</p>
-      <p class="p-consent">
-        I understand that Resiliency Tattoo Studio cannot guarantee a specific
-        outcome or exact color, shape, or style in the tattoo healing process,
-        as individual results may vary.
-      </p>
-
-      <!-- Consent 9 -->
-      <p class="font-bold">9.Permanent Nature of Tattoo:</p>
-      <p class="p-consent">
-        I understand that a tattoo is a permanent body modification. I am fully
-        aware that tattoo removal is difficult, expensive, and may not result in
-        complete removal.
-      </p>
       <div class="p-1 border-b-4 border-lime-500">
         <p class="text-2xl">Client declaration</p>
       </div>
@@ -408,7 +367,7 @@
         <input
           type="checkbox"
           id="checkbox"
-          name="checkbox-tattoo-consents"
+          name="checkbox-piercing-consents"
           class="form-checkbox h-5 w-5 text-blue-600 flex-shrink-0"
           required
         />
@@ -428,7 +387,7 @@
       <!-- Signature -->
       <div class="mb-4">
         <label for="signature" class="block text-gray-700 font-bold mb-2"
-          >Signature *</label
+          >Client or Parent/Guardian Signature (if under 18)</label
         >
         <canvas
           id="signature"
